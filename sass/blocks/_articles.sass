@@ -1,0 +1,124 @@
+/*articles start*/
+.articles
+  width: $width1140
+  border-left: 1px solid $color_rgbad2bea6
+  font-family: $fontFamilyMontserratLight
+  color: $color_494450
+
+  &__header
+    padding: $padding_60_0_30_40
+    font-family: $fontFamilyMontserratBlack
+    font-size: $fontsize44
+    line-height: $lineHeight_48
+    font-weight: $fontWeight_900
+    text-transform: uppercase
+    letter-spacing: $letterSpacing_0_05
+    color: $color_d2bea6
+
+  &__baner
+    padding-left: 40px
+    position: relative
+    z-index: 0
+    width: 100%
+    height: 560px
+    background-image: url(../img/articles/pic_main_default_5783.png)
+    border: 5px solid rgba(#d2bea6, 0.0)
+
+    // Вернуть, когда картинка будет без текста    
+    // h2
+    //   margin-top: 453px 
+    //   font-family: $fontFamilyMontserratBold
+    //   font-size: 36px
+    //   line-height: 42px
+    //   font-weight: 900      
+    //   letter-spacing: 0.01em
+    //   color: #d2bea6
+    // p 
+    //   font-size: 18px
+    //   line-height: 26px
+    //   font-weight: 500
+    //   // text-decoration: none
+    //   letter-spacing: -0.01em
+    //   color: #d2bea6
+    &:hover
+      border: 5px solid #d2bea6
+      // Вернуть, когда картинка будет без текста
+      // h2
+      //   text-decoration: underline
+      .baner__line
+        width: 870px
+        position: absolute
+        bottom: 53px
+        left: 40px
+        z-index: 1
+        border: 2px solid #d2bea6
+  &__article
+    display: flex
+    align-items: center
+    margin-top: 40px
+    margin-left: 40px
+    .article__hider      
+      width: 380px
+      margin-left: 40px
+      color: $color_494450
+      h2
+        font-family: $fontFamilyMontserratBold
+        font-size: 26px
+        line-height: 32px
+        font-weight: 900
+        letter-spacing: 0.01em
+        color: $color_494450
+      p 
+        margin-top: 20px
+        font-size: 16px
+        line-height: 24px
+        font-weight: 500
+        letter-spacing: -0.01em
+
+  &__subscribe
+    position: relative
+    width: 100%
+    height: 235px
+    margin: 40px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    // background-color: #494450
+    background-image: linear-gradient(0.0deg, #d2bea6 0%, #ebd9c3 70%, #ebd9c3 100%)
+    .subscribe__stayInTouch
+      width: 490px
+      text-align: center
+      // margin-top: 40px
+      h2 
+        font-family: $fontFamilyBebasNeue
+        font-size: 36px
+        line-height: 30px
+        font-weight: 700
+        letter-spacing: 0.111em
+        color: #d2bea6
+      p 
+        margin-top: 20px
+        font-size: 14px
+        line-height: 20px
+        font-weight: 500
+        letter-spacing: -0.01em
+        color: #494450
+
+    .subscribe__email-input
+      position: relative
+
+  .subscribe__img_left
+    position: absolute
+    left: 0
+    bottom: 5px
+  .subscribe__img_right
+    position: absolute
+    right: 0
+    bottom: 0
+
+  .subscribe__last
+    margin-bottom: 80px
+
+
+/*articles stop*/  

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.375" height="25.968" viewBox="0 0 28.375 25.968">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d2bea6;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="menu_icon_a_catalog_hover" class="cls-1" d="M68.053,268.309H44.417v-2.361H68.053v2.361Zm-4.727,5.9H44.417V271.85H63.326v2.361ZM58.6,286.016H44.417v-2.361H58.6v2.361Zm7.091,5.9H44.417v-2.361H65.689v2.361Zm2.364-11.8H44.417v-2.361H68.053v2.361Zm-26-11.8H39.69v-2.361h2.364v2.361Zm0,5.9H39.69V271.85h2.364v2.361Zm0,11.805H39.69v-2.361h2.364v2.361Zm0,5.9H39.69v-2.361h2.364v2.361Zm0-11.8H39.69v-2.361h2.364v2.361Z" transform="translate(-39.688 -265.938)"/>
+</svg>

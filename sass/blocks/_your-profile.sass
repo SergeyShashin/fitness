@@ -1,0 +1,603 @@
+/* your-profile start */
+.your-profile
+  width: 70%
+  border-left: 1px solid $color_rgbad2bea6
+  font-family: $fontFamilyMontserratLight
+  font-size: $fontsize13
+  line-height: $lineHeight_20
+  font-weight: $fontWeight_500
+  color: $color_494450
+  details
+    font-size: $fontsize16
+    line-height: $lineHeight_1_2
+    font-weight: $fontWeight_900
+    letter-spacing: $letterSpacing_0_01
+  .label_input
+    display: block
+    margin-bottom: $marginBottom_5
+    &_span
+      color: $color_d2bea6
+
+.your-profile_header
+  padding: $padding_50_40_30_40
+  border-bottom: 1px solid $color_rgbad2bea6
+  h2
+    font-family: $fontFamilyMontserratBlack
+    font-size: $fontsize44
+    line-height: $lineHeight_48
+    font-weight: $fontWeight_900
+    text-transform: uppercase
+    letter-spacing: $letterSpacing_0_05
+    color: $color_d2bea6
+
+.your-profile_login
+  display: flex
+  height: 425px
+  justify-content: space-between
+  padding: 30px 40px  
+  border-top: 1px solid $color_rgbad2bea6
+  border-bottom: 1px solid $color_rgbad2bea6
+  .login_left
+    width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .female
+      display: flex
+    .wrap_heightAndWeight
+      width: 519px
+      display: flex
+      justify-content: space-between      
+      .wrap_height, .wrap_weight
+        width: $width250
+        .minus //сделать, чтобы работало правильно
+          display: block
+          width: $width20
+          height: $height4
+          background: #d2bea6
+          margin: auto
+          &:hover, &:focus
+            background: #494450
+    .wrap_birthday
+      width: 250px
+
+  .login_right
+    width: 48%
+    display: flex
+    align-items: space-between
+    flex-direction: column
+    justify-content: flex-end    
+    .login_photo
+      position: relative
+      height: 242px
+      border: 2px dashed $color_d2bea6
+      border-radius: $borderRadius_20
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      .login_img_ava
+        width: 160px
+        height: 160px
+        position: absolute
+        top: -105px
+      .login_photo_img
+        display: block
+        width: $width52
+      .text_login_photo
+        margin-top: $marginTop_15
+        font-family: $fontFamilyMontserratBold
+        font-size: $fontsize16
+        line-height: $lineHeight_24
+        font-weight: $fontWeight_500
+        color: $color_d2bea6
+
+.your-profile-contacts
+  height: $height466
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 30px 40px
+  border-bottom: 1px solid rgba(#d2bea6, 0.5)
+  &_header
+    font-family: $fontFamilyBebasNeue
+    font-size: 22px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.111em
+    color: #d2bea6
+  .wrap_mail, .wrap_country,
+  .wrap_phone, .wrap_social-network
+    width: 520px
+  .details-country
+    height: 50px
+    display: flex
+    background-color: #e8d7c3
+    border-radius: 10px
+    &:hover
+      background-color: #f1e2cf
+      box-shadow: 0px 4px 20px 0px #d2bea6
+      cursor: pointer
+    .summary-country
+      height: 50px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 0px 19px
+      .img_country
+        display: block
+        margin-right: 15px
+        width: 30px
+        height: 21px
+  .details-country[open]
+    position: relative
+    z-index: 12
+    border-radius: 10px
+    box-shadow: 0px 4px 20px 0px #d2bea6
+    .img_dropdown
+      transform: rotate(180deg)
+    .turkmenistan, .ukraine, .uzbekistan
+      display: none
+    .summary-country
+      background-color: #f1e2cf      
+      &:first-child
+        border-radius: 10px 10px 0 0
+        border-bottom: 2px solid #e8d7c3
+      &:nth-child(12)        
+        border-radius: 0 0 10px 10px
+        background: #f1e2cf
+      &:hover
+        background-color: #f4e8d9
+        cursor: pointer 
+           
+        
+    .scrollbar
+      padding: 10px 0
+      display: flex
+      justify-content: center
+      position: absolute
+      width: 20px
+      height: 392px
+      right: 17px
+      top: 60px
+      z-index: 1
+      border-radius: 10px
+      background: rgba(#e8d7c3, 0.5)
+      .scrollbar-control
+        width: 10px
+        height: 213px
+        background: #d2bea6
+        border-radius: 5px
+
+  .details-social-network
+    height: 50px
+    display: flex
+    background-color: #e8d7c3
+    border-radius: 10px
+    &:hover
+      background-color: #f1e2cf
+      box-shadow: 0px 4px 20px 0px #d2bea6
+      cursor: pointer
+    .summary-social-network
+      width: 520px
+      height: 50px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-left: 20px
+      .img_social
+        margin-right: 20px
+        display: block
+        width: 24px
+        height: 24px
+  .details-social-network[open]
+    position: relative
+    z-index: 12
+    box-shadow: 0px 4px 20px 0px #d2bea6
+    border-radius: 10px
+    .img_dropdown
+      transform: rotate(180deg)
+    .summary-social-network
+      position: relative
+      height: 60px
+      background: #f1e2cf
+      &:hover
+        border-radius: none
+        background-color: #f4e8d9
+        cursor: pointer
+      &:first-child
+        border-radius: 10px 10px 0 0
+        border-bottom: 2px solid #e8d7c3
+      &:last-child
+        border-radius: 0 0 10px 10px
+      .input_social-network-open
+        display: block
+        height: 57px
+        background: #f1e2cf
+        border-radius: 0
+        border-left: 2px solid #e8d7c3                 
+        &:last-child
+          border-radius: 0 10px 10px 0
+
+
+.your-profile_change-pasword
+  height: 381px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 30px 40px
+  border-bottom: 1px solid rgba(#d2bea6, 0.5)
+  &_header
+    font-family: $fontFamilyBebasNeue
+    font-size: 22px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.111em
+    color: #d2bea6
+  .wrap_pasword
+    position: relative
+    width: 520px   
+    .icon_eye_close
+      position: absolute
+      z-index: 1
+      // display: block
+      display: none // переключать на block
+      width: 24px
+      // height: 12px
+      top: 43px
+      right: 20px
+    .icon_eye_open
+      position: absolute
+      z-index: 1
+      display: block
+      // display: none // переключать на block
+      width: 24px
+      // height: 12px
+      top: 40px
+      right: 20px
+    .error-message
+      display: block
+      font-weight: 500
+      color: #ec274c
+      margin-top: 5px
+  .wrap_new-pasword
+    position: relative
+    width: 520px
+    .icon_eye_close-new
+      position: absolute
+      display: block
+      width: 24px
+      height: 12px
+      top: 43px
+      right: 20px
+    .icon_eye_open-new
+      position: absolute
+      display: none //переключать на block
+      width: 24px
+      height: 12px
+      top: 43px
+      left: 480px
+
+.your-profile_notifications
+  // width: 520px
+  height: 176px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 30px 40px
+  border-bottom: 1px solid rgba(#d2bea6, 0.5)
+  &_header
+    font-family: $fontFamilyBebasNeue
+    font-size: 22px
+    line-height: 1.2
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.111em
+    color: #d2bea6
+  &_checkAndText
+    width: 520px
+    display: flex
+    .check_notifications
+      width: 50px
+      height: 50px
+      padding: 0 12px
+      text-align: center
+      background-color: #494450
+      border-radius: 10px
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        min-width: 20px
+    .text_notifications
+      margin-top: 10px
+      margin-left: 10px
+      h5
+        font-family: $fontFamilyMontserratBold
+        font-size: 16px
+        line-height: 1.2
+        font-weight: 900
+        letter-spacing: 0.01em      
+
+.your-profile_buttons
+  height: 170px
+  display: flex
+  padding: 30px 40px
+  border-bottom: 1px solid rgba(#d2bea6, 0.5)
+
+@media (max-width: 1619px)
+  .your-profile_login
+    height: 500px
+  .wrap_heightAndWeight
+    flex-direction: column
+    .wrap_height
+      margin-bottom: 10px
+
+  .wrap_mail, .wrap_country,
+  .wrap_phone, .wrap_social-network
+    width: 50%
+
+@media (max-width: 1199px)
+  .your-profile_header
+    h2
+      font-size: 36px
+
+  .your-profile_login
+    .login_right
+      .login_photo
+        .login_img_ava
+          top: -70px
+          width: 100px
+          height: 100px
+
+@media (max-width: 991px)
+  .your-profile_header
+    h2
+      font-size: 33px
+
+  .your-profile_login
+    height: 833px
+    flex-direction: column
+    .login_left
+      width: 100%
+      height: 420px
+      .wrap_heightAndWeight
+        .wrap_height, .wrap_weight
+          width: 100%
+        .wrap_birthday
+          width: 100%
+    .login_right
+      width: 100%
+      height: 350px
+
+  .your-profile-contacts
+    .wrap_mail, .wrap_country,
+    .wrap_phone, .wrap_social-network,    
+    .details-social-network
+      width: 100% 
+      .summary-social-network
+        width: 100%
+    .details-social-network[open]
+      width: 100%
+  
+  .your-profile_change-pasword
+    .wrap_pasword,
+    .wrap_new-pasword
+      width: 100%
+  
+  .your-profile_notifications
+    &_checkAndText
+      width: 100%
+             
+
+@media (max-width: 768px)
+  .your-profile    
+    .your-profile_header
+      h2
+        font-size: 30px
+    .your-profile-contacts
+      height: 500px
+      .details-social-network      
+        .summary-social-network
+          padding-right: 20px     
+          .input_social-network-open
+            display: none
+
+      .details-social-network[open]
+        .summary-social-network    
+          .input_social-network-open
+            display: none
+
+      .social-network-deatailsAndInput
+        flex-direction: column
+        height: 120px
+        justify-content: space-between
+        .input_social-network
+          display: block
+
+    .your-profile_notifications
+      height: 190px
+
+    .your-profile_buttons
+      height: 210px
+      flex-direction: column
+      justify-content: space-between
+      align-items: center    
+
+
+@media (max-width: 576px)
+  .your-profile
+    .your-profile_header
+      h2
+        font-size: 24px
+    .your-profile_login
+      .login_right 
+        .login_photo
+          .text_login_photo
+            font-size: 14px
+
+    .your-profile_notifications
+      height: 230px
+      .check_notifications
+        width: 30px
+        height: 30px
+        border-radius: 5px      
+      .text_notifications
+        h5
+          font-size: 14px
+
+@media (max-width: 480px)  
+  .your-profile
+    width: 100%
+    .your-profile_header
+      height: 70px
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      padding: 0
+      padding-bottom: 20px
+      h2
+        font-size: 24px
+        line-height: 28px    
+
+    .your-profile_ava
+      display: flex
+      justify-content: center
+      padding-top: 30px
+      .ava-frame
+        position: relative
+        width: 162px
+        height: 162px
+        border-radius: 50%
+        background: #e8d7c3
+        display: flex
+        justify-content: center
+        align-items: center        
+        &:hover
+          background: none
+          .ava-frame_stroke
+            position: absolute
+            display: block            
+        
+    .your-profile_login
+      height: 488px
+      display: flex
+      align-items: center
+      padding: 30px 
+      border-top: none
+      // height: 425px
+      // justify-content: space-between
+      // border-top: 1px solid $color_rgbad2bea6
+      // border-bottom: 1px solid $color_rgbad2bea6
+      .login_left
+        .wrap_heightAndWeight
+          width: 100%
+        .wrap_height, .wrap_weight, .wrap_birthday
+          width: 100%       
+
+    .your-profile-contacts
+      padding: 30px
+      .summary-country
+        font-family: $fontFamilyMontserratBold
+        font-size: 14px
+      .details-country[open]
+        .img_dropdown
+          display: none
+        .img_close-mobile
+          display: block    
+        .summary-country
+          &:first-child
+            color: #d2bea6
+            border-bottom: none
+            .img_country
+              display: none
+            .img_country-selected
+              display: block
+              padding: 0 5px
+              margin-right: 15px
+              
+            
+      .social-network-deatailsAndInput
+        flex-direction: row
+        height: 50px
+        // justify-content: space-between
+        .input_social-network
+          display: none       
+      .details-social-network
+        .summary-social-network
+          font-family: $fontFamilyMontserratBold
+          font-size: 14px
+          width: 100%
+          padding: 0
+          padding-left: 20px 
+          .img_social
+            margin-right: 15px
+          .img_dropdown
+            margin-right: 20px     
+          .input_social-network
+            display: block          
+      .details-social-network[open]
+        box-shadow: none        
+        .summary-social-network
+          height: 52px
+          box-shadow: none                      
+          .transparent-filter
+            display: none
+          .img_dropdown
+            display: none
+          .img_close-mobile
+            display: block
+          &:first-child
+            height: 25px
+            background: #f1e2cf
+            border-bottom: none
+            padding-top: 10px
+            padding-right: 10px
+            .img_social
+              display: none
+        .instagram
+            color: #d2bea6
+            .img_social
+              display: none
+            .img_social-selected
+              display: block
+              // padding: 0 5px
+              margin-right: 20px
+              
+
+    .your-profile_change-pasword
+      height: 370px
+      padding: 30px
+      justify-content: space-between
+      .wrap_button-change-password
+        margin-top: 10px
+        width: 100%
+        display: flex
+        justify-content: center
+
+    .your-profile_notifications
+      padding: 30px
+      .your-profile_notifications_checkAndText
+        .check_notifications
+          width: 50px
+          height: 50px
+          border-radius: 10px      
+        .text_notifications
+          h5
+            font-size: 14px
+
+    .your-profile_buttons
+      padding: 30px
+      margin-bottom: 40px
+      height: 230px
+      border-bottom: none
+      justify-content: space-evenly
+
+  /*добавлять класс если разрешение 480px и меньше, и кликнули по summarySocialNetworkMobile/
+  .your-profile_for-details-open
+    background: rgba(#000000, 0.8)     
+
+
+/*your-profile stop*/

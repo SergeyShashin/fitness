@@ -1,0 +1,293 @@
+/* reviews-page start*/
+.reviews
+  width: $width1140
+  border-left: 1px solid $color_rgbad2bea6
+  font-family: $fontFamilyMontserratLight
+  font-size: $fontsize13
+  line-height: $lineHeight_20
+  font-weight: $fontWeight_500
+  color: $color_494450
+
+  &__header
+    padding: $padding_60_40_30_40
+    font-family: $fontFamilyMontserratBlack
+    font-size: $fontsize44
+    line-height: $lineHeight_48
+    font-weight: $fontWeight_900
+    text-transform: uppercase
+    letter-spacing: $letterSpacing_0_05
+    color: $color_d2bea6
+
+  &__rating
+    width: 100%
+    display: flex
+    align-items: center
+    padding-left: 40px
+    height: 169px
+    background-color: #494450
+    background-image: linear-gradient(0.0deg, #494450 0%, #615c69 70%, #615c69 100%)
+    color: #d2bea6
+    .rating__number
+      margin-right: 40px
+      font-family: $fontFamilyBebasNeue
+      font-size: 128px
+      // line-height: 1.2
+      font-weight: 700
+      letter-spacing: 0.01em
+    .rating__stars
+      &_img
+      &_text
+        margin-top: 15px
+        width: 210px
+        font-size: 14px
+        letter-spacing: -0.01em
+    .rating__diagram
+      margin-left: 80px
+      display: flex
+      .diagram__img_stars
+        margin-right: 20px
+      .diagram__lines
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 4px 0
+        .line
+          position: relative
+          width: 430px
+          height: 1px
+          background-color: rgba(#d2bea6, 0.2)
+          &__thik_1,
+          &__thik_2,
+            position: absolute
+            top: -2px
+            height: 6px
+            background-color: #d2bea6
+          &__thik_1
+            width: 323px
+          &__thik_2
+            width: 107px
+          &__thik_3
+          &__thik_4
+          &__thik_5
+      .diagram__numbers
+        height: 96px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        // padding: 4px 0
+        margin-left: 20px
+        font-size: 12px
+        font-weight: 500
+        letter-spacing: -0.01em
+        p 
+          margin-bottom: 2px
+        
+  &__made
+    display: flex
+    padding: 40px
+    border-bottom: 1px solid rgba(#d2bea6, 0.5)
+    .reviews__made-right,
+      margin-right: 20px
+    .reviews__made-left
+      
+    .review-card
+      width: 520px
+      margin-bottom: 20px
+      background-color: rgba(255,255,255,0.0)
+      border: 1px solid #d2bea6
+      border-radius: 10px
+      &__header
+        display: flex
+        align-items: center
+        padding: 20px
+        height: 100px          
+        background-color: rgba(#d2bea6, 0.5) 
+        border-radius: 10px 10px 0px 0px
+        .header__ava
+          position: relative
+          margin-right: 10px
+          display: flex
+          justify-content: center
+          align-items: center
+          padding-left: 6px            
+          width: 60px
+          height: 60px            
+          background-color: rgba(#ffffff, 0.5) 
+          border-radius: 30px
+          font-family: $fontFamilyBebasNeue
+          font-size: 40px
+          // line-height: 1.2
+          font-weight: 700
+          letter-spacing: 0.111em
+          color: #d2bea6
+          img 
+            position: absolute
+            // margin: auto
+            left: 0
+        .header__nickname
+          .wrap-nickname-social
+            display: flex
+            align-items: center              
+            .nickname
+              font-family: $fontFamilyBebasNeue
+              font-size: 20px
+              line-height: 1.2
+              font-weight: 700
+              letter-spacing: 0.111em
+              color: #494450
+              margin-right: 7px
+            img 
+              opacity: 0.2
+              display: block
+              height: 16px
+            .description
+              margin-top: 10px
+              font-size: 12px
+              letter-spacing: -0.01em
+      &__body
+        font-family: $fontFamilyMontserratBlack
+        padding: 20px          
+        color: #494450
+        h3
+          margin: 15px 0
+          font-size: 26px
+          line-height: 32px
+          font-weight: 900
+          letter-spacing: 0.01em
+        p
+          margin-bottom: 15px
+          font-family: $fontFamilyMontserratLight
+          font-size: 16px
+          line-height: 24px
+          letter-spacing: -0.01em
+  
+  &__create
+    position: relative
+    padding: 30px 40px 40px 40px
+    .wrap__LeftAndRight
+      position: relative
+      display: flex
+      justify-content: space-between
+    .create__header
+      margin-bottom: 25px
+      font-family: $fontFamilyBebasNeue
+      font-size: 22px
+      line-height: 1.2
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.111em
+      color: #d2bea6
+    .create__left
+      width: 520px
+    .create__right
+      width: 520px
+      .create__your-review
+        .text-area__your-review
+          margin-top: 5px
+          padding: 20px
+          resize: none
+          width: 100%
+          height: 266px
+          background-color: #e8d7c3
+          border-radius: 10px
+          border: none
+          font-size: $fontsize16
+          line-height: $lineHeight_1_2
+          font-weight: $fontWeight_900
+          letter-spacing: $letterSpacing_0_01
+          color: $color_d2bea6
+          &:focus
+            color: $color_494450
+
+    .create__assessment
+      margin-bottom: 30px
+      p 
+        margin-bottom: 5px
+
+    .create__header-input
+            
+    .label__create-header-input,
+    .label__load-foto-input
+      display: block
+      margin-bottom: 5px
+   
+    .description__input
+      margin-left: 15px
+      margin-top: 5px
+      font-size: 10px
+      line-height: 16px
+      color: rgba(#494450, 0.7)
+    
+    .create__load-foto
+      margin-top: 30px          
+    .load-foto
+      display: flex
+      justify-content: center
+      padding: 5px
+      width: 100%
+      height: 51px
+      border-radius: 10px
+      border: 1px dashed #d2bea6
+      &__files        
+        margin-left: 10px
+        font-size: 12px
+        line-height: 20px
+        .file-name
+        .file-size
+          color: #d2bea6
+    .file1
+      margin-top: 15px
+    .file2
+      margin-bottom: 25px
+
+  .create__line
+    position: absolute
+    left: -40px
+    width: 1140px
+    height: 1px
+    background: rgba(#d2bea6, 0.5)
+
+  .create__email-input,
+  .create__name-input
+    margin-top: 30px
+
+  &__slider
+    padding: 0px
+    width: 100%
+    margin-top: 30px
+    display: flex
+    align-items: center
+    .slider__header_reviews
+      width: 100%
+      text-align: left      
+      font-family: $fontFamilyBebasNeue
+      margin-left: 40px
+      margin-bottom: 30px
+      font-size: 22px
+      line-height: 1.2
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.111em
+      color: #d2bea6
+    .slider__img_reviews
+      width: 100%      
+      .img__reviews-opacity
+        opacity: 0.5
+      .img__reviews-center
+        margin: 0 15px
+    .text__instagramm      
+      width: 43%
+      text-align: left
+      font-size: 12px
+      line-height: 20px
+      text-decoration: underline
+      color: #494450
+    .slider__control_reviews
+      justify-content: space-between
+      padding: 0
+      margin-top: 35px
+      margin-bottom: 75px
+      .number-page__reviews
+
+
+/* reviews-page stop*/

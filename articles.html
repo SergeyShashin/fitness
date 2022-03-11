@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.13.0.custom/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="js/jquery-ui-1.13.0.custom/external/jquery/jquery.js"></script>
+  <script src="js/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+  <title>Статьи</title>
+</head>
+
+<body>
+  <div class="front-page">
+    <div class="wrap_side-bar">
+      <div class="side-bar">
+        <div class="side-bar_full_default">
+          <div class="side-bar_header">
+            <a href="http://petrova-alina.ru">
+              <img class="header_button_menu"
+                src="img/header_button_menu.svg"
+                alt="header_button_menu">
+            </a>
+            <a href="http://petrova-alina.ru">
+              <img class="alina_petrova_logo"
+                src="img/alina_petrova_logo.svg" alt="Алина Петрова">
+            </a>
+          </div>
+          
+          <div class="side-bar_profile">
+            <div class="wrapAvaAndText">
+              <div class="ava_default"><img src="img/ava_default.svg"
+                  alt="ava_default"></div>
+              <span class="text_Input not_authorized">Вход</span>
+              <span class="authorized-user text_UserName displayNone">Stepanchik</span>
+            </div>
+            <button class="button_register not_authorized">Регистрация</button>
+            <span class="authorized-user button_exit displayNone">ВЫХОД</span>
+            <div class="wrap_sidebar_profile"></div>
+          <!-- /.wrap_sidebar_profile -->
+          </div>
+          <!-- /.side-bar_profile -->
+          <div class="list">
+            <a href="http://petrova-alina.ru/katalog">
+              <div class="catalog">
+                <img class="catalog_icon"
+                  src="img/menu_icon_a_catalog.svg" alt="КАТАЛОГ">
+                <img class="catalog_icon-hover displayNone"
+                  src="img/menu_icon_a_catalog_hover.svg" alt="КАТАЛОГ">
+                <div class="catalog_text">Каталог</div>
+              </div>
+            </a>
+            <!-- /.catalog -->
+            <a href="http://petrova-alina.ru/trenirovki">
+              <div class="exercise">
+                <img class="exercise_icon"
+                  src="img/menu_icon_b_exercise.svg" alt="ТРЕНИРОВКИ">
+                <img class="exercise_icon-hover displayNone"
+                  src="img/menu_icon_b_exercise_hover.svg" alt="ТРЕНИРОВКИ">
+                <div class="exercise_text">Тренировки</div>
+              </div>
+            </a>
+            <!-- /.exercise -->
+            <a href="http://petrova-alina.ru/chat">
+              <div class="chat">
+                <img class="chat_icon" src="img/menu_icon_f_chat.svg"
+                  alt="ЧАТ">
+                <img class="chat_icon-hover displayNone" src="img/menu_icon_f_chat_hover.svg"
+                  alt="ЧАТ">
+                <div class="chat_text">Чат</div>
+              </div>
+            </a>
+            <!-- /.chat -->
+            <a href="http://petrova-alina.ru/ob-aline">
+              <div class="about">
+                <img class="about_icon" src="img/menu_icon_j_about.svg"
+                  alt="ОБ АЛИНЕ">
+                <img class="about_icon-hover displayNone" src="img/menu_icon_j_about_hover.svg"
+                  alt="ОБ АЛИНЕ">
+                <div class="about_text">ОБ АЛИНЕ</div>
+              </div>
+            </a>
+            <!-- /.about -->
+            <a href="http://petrova-alina.ru/faq">
+              <div class="faq">
+                <img class="faq_icon" src="img/menu_icon_i_faq.svg"
+                  alt="FAQ">
+                <img class="faq_icon-hover displayNone" src="img/menu_icon_i_faq_hover.svg"
+                  alt="FAQ">
+                <div class="faq_text">FAQ</div>
+              </div>
+            </a>
+            <!-- /.faq -->
+            <a href="http://petrova-alina.ru/reviews">
+              <div class="review">
+                <img class="review_icon"
+                  src="img/menu_icon_h_review.svg" alt="ОТЗЫВЫ">
+                <img class="review_icon-hover displayNone"
+                  src="img/menu_icon_h_review_hover.svg" alt="ОТЗЫВЫ">
+                <div class="review_text">ОТЗЫВЫ</div>
+              </div>
+            </a>
+            <!-- /.review -->
+            <a href="http://petrova-alina.ru/pitanie" class="displayNone authorized-user">
+              <div class="nutrition">
+                <img class="nutrition_icon"
+                  src="img/menu_icon_c_nutrition.svg" alt="ПИТАНИЕ">
+                <img class="nutrition_icon-hover displayNone"
+                  src="img/menu_icon_c_nutrition_hover.svg" alt="ПИТАНИЕ">
+                <div class="nutrition_text">ПИТАНИЕ</div>
+              </div>
+            </a>
+            <!-- /.nutrition -->
+            <a href="http://petrova-alina.ru/dinamika" class="displayNone authorized-user">
+              <div class="progress">
+                <img class="progress_icon"
+                  src="img/menu_icon_d_progress.svg" alt="ДИНАМИКА">
+                <img class="progress_icon-hover displayNone"
+                  src="img/menu_icon_d_progress_hover.svg" alt="ДИНАМИКА">
+                <div class="progress_text">ДИНАМИКА</div>
+              </div>
+            </a>
+            <!-- /.progress -->
+            <a href="http://petrova-alina.ru/stati" class="displayNone authorized-user">
+              <div class="article">
+                <img class="article_icon"
+                  src="img/menu_icon_e_article.svg" alt="СТАТЬИ">
+                <img class="article_icon-hover displayNone"
+                  src="img/menu_icon_e_article_hover.svg" alt="СТАТЬИ">
+                <div class="article_text">СТАТЬИ</div>
+              </div>
+            </a>
+            <!-- /.article -->
+            <a href="http://petrova-alina.ru/konkursy" class="displayNone authorized-user">
+              <div class="contest">
+                <img class="contest_icon"
+                  src="img/menu_icon_g_contest.svg" alt="КОНКУРСЫ">
+                <img class="contest_icon-hover displayNone"
+                  src="img/menu_icon_g_contest_hover.svg" alt="КОНКУРСЫ">
+                <div class="contest_text">Конкурсы</div>
+              </div>
+            </a>
+            <!-- /.contest -->
+          </div>
+          <!-- /.list -->
+          <div class="side-bar_feedback">
+            <div class="feedback-text">
+              <span>Есть вопросы? Наша служба поддержки работает 24/7. Пиши!</span>
+              <img class="emoji_smile"
+                src="img/menu_feedback_emoji_smile.svg"
+                alt="Emoji_smile">
+            </div>
+            <!-- /.feadback-text -->
+            <button class="feedback-button">ЗАДАТЬ ВОПРОС</button>
+          </div>
+          <!-- /.side-bar_feadback -->
+          <div class="question displayNone">
+            <a class="question-button" href="#">
+              <img class="question__default" src="img/button_default_1285.png" alt="button_default_1285">
+              <img class="question__active displayNone" src="img/button_active_1280.png" alt="button_active_1280">
+            </a>
+          </div>
+        </div>
+        <!-- /.side-bar_full_default -->
+      </div>
+      <!-- /.side-bar -->
+    </div>
+    <!-- /.wrap_side bar -->
+
+    <div class="articles">
+      <div class="articles__header">
+        <h1>Статьи</h1>
+      </div>
+      <!-- articles__header -->
+
+      <a href="http://petrova-alina.ru/article1/">
+        <div class="articles__baner">
+          <!-- Вернуть, когда картинка будет без текста -->
+          <!-- <h2>Неудаление Кейна и красная Робертсону</h2>
+        <p>«Тоттенхэм» и «Ливерпуль» искрили не только голами</p> -->
+          <div class="baner__line"></div>
+        </div>        
+      </a>
+      <!-- articles__baner -->
+
+      <a href="#">
+        <div class="articles__article">
+          <img src="img/articles/pic_5730.png" alt="img">
+          <div class="article__hider">
+            <h2>Tackling imposter syndrome as a health and fitness professional</h2>
+            <p>All about the fear of being exposed as a fraud as expectations and responsibilities increase</p>
+          </div>
+        </div>        
+      </a>
+      <!-- articles__articles -->
+
+      <a href="#">
+        <div class="articles__article">
+          <img src="img/articles/pic_5730.png" alt="img">
+          <div class="article__hider">
+            <h2>«Шпоры» и «Красные» устроили шоу (2:2)</h2>
+            <p>За такие матчи мы и любим АПЛ</p>
+          </div>
+        </div>        
+      </a>
+      <!-- articles__articles -->
+
+      <div class="articles__subscribe">
+        <div class="subscribe__stayInTouch">
+          <h2>Будь в курсе</h2>
+          <p>Подписывайся, чтобы получать прямо в ящик новые блоги, советы и спецпредложения от Алины (не чаще раза в месяц)</p>
+        </div>
+        <!-- /.subscribe__stayInTouch -->
+        <div class="subscribe__email-input">
+          <input id="inputSubscribeEmail" class="input__subscribe-email" type="email" value="электропочта">
+          <button class="button__subscribe">Подписаться</button>
+        </div>
+        <!-- subscribe__email-input -->
+        <img class="subscribe__img_left" src="img/articles/alina_about_293_5769.png" alt="img" >
+        <img class="subscribe__img_right" src="img/articles/alina_pokhudenie_107_5770.png" alt="img" >
+      </div>
+      <!-- /.articles__subscribe -->
+
+      <a href="#">
+        <div class="articles__article">
+          <img src="img/articles/pic_5730.png" alt="img">
+          <div class="article__hider">
+            <h2>Health impact of loneliness and social isolation</h2>
+            <p>And how health and wellness coaches can help</p>
+          </div>
+        </div>        
+      </a>
+      <!-- articles__articles -->
+
+      <a href="#">
+        <div class="articles__article  subscribe__last">
+          <img src="img/articles/pic_5730.png" alt="img">
+          <div class="article__hider">
+            <h2>Virtual fitness is here to stay</h2>
+            <p>How to adapt as a personal trainer.</p>
+          </div>
+        </div>        
+      </a>
+      <!-- articles__articles -->
+
+
+    </div>
+    <!-- articles -->
+
+
+
+
+  </div>
+  <!-- /.front-page -->
+
+  <div class="wrap-footer">
+    <div class="footer">
+      <span class="footer_copyright">© 2021–2026 Alina Petrova™</span>
+      <a href="#" class="footer_download_google_play"><img src="img/footer_download_google_play_white.svg"
+          alt="google_play"></a>
+      <a href="#" class="footer_download_app_store"><img src="img/footer_download_app_store_white.svg" alt=""></a>
+      <div class="footer_social_media">
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_ig_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_ig_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_vk_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_vk_active.svg" alt="social_media_active" class="displayNone social-media__active"></a>
+        </a>
+        <a class="a-social-media mt3" href="#">
+          <img src="img/01_main/footer_social_yt_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_yt_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_tg_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_tg_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_fb_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_fb_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+      </div>
+    </div>
+    <!-- /.footer -->
+  </div>
+  <!-- /.wrap-footer -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

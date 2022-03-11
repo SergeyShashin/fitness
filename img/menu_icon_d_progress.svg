@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.375" height="28.344" viewBox="0 0 28.375 28.344">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #615c69;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="menu_icon_d_progress" class="cls-1" d="M46.8,437.732l3.252-6.011,6.72,11.085,7.17-17.321h4.113v-2.361H62.359L56.37,437.59l-6.439-10.618-4.545,8.4H42.053V420.538H39.69v28.331H68.053v-2.361h-26v-8.776H46.8Z" transform="translate(-39.688 -420.531)"/>
+</svg>

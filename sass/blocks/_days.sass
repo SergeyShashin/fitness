@@ -1,0 +1,172 @@
+/*days start*/
+// удалять в html класс displayNone у дня который нужно показать
+//при клике по кнопке Полная программа убирать класс в html .wrap__days_hide
+//.wrap__days_hide в html ставить класс по клику на закрытие окна
+
+.wrap__days
+  width: 100%
+  height: 100%
+  z-index: 0
+  padding-top: 150px
+  padding-left: 20%  
+  position: absolute
+  display: flex
+  justify-content: center  
+  background: rgba(#000000, 0.8)
+  &_hide
+    display: none
+  .days
+    position: relative
+    top: 50%
+    padding: 40px 35px
+    margin-top: 45px
+    width: 100%
+    height: 620px
+    background-color: #f1e2cf
+    border-radius: 10px
+    font-family: $fontFamilyMontserratLight
+    font-size: 13px
+    font-weight: 500
+    color: #494450
+    &__img_close
+      position: absolute
+      top: 20px
+      right: 20px
+      cursor: pointer
+    &__arrow_bck
+      position: absolute
+      top: 50%
+      left: -135px
+      cursor: pointer
+      opacity: 0.5
+      &:hover
+        opacity: 1
+    &__arrow_frwrd
+      position: absolute
+      top: 50%
+      right: -135px
+      cursor: pointer
+      opacity: 0.5
+      &:hover
+        opacity: 1
+    &__header
+      text-align: center
+      font-family: $fontFamilyBebasNeue
+      font-size: 36px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.111em
+      margin-bottom: 20px
+    &__description
+      font-weight: 500
+      letter-spacing: -0.01em
+    &__sets    
+      .set__header
+        margin-top: 20px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.05em
+      .set__list
+        list-style: disc inside               
+        .set__items
+          margin-top: 10px
+          color: #d2bea6
+          span 
+            color: #494450
+  .wrap__day
+    position: absolute
+
+@media (max-width: 1199px)
+  .wrap__days    
+    .days      
+      &__arrow_bck
+        left: -60px
+      &__arrow_frwrd
+        right: -60px
+        
+@media (max-width: 991px)
+  .wrap__days    
+    .days      
+      width: 75%
+      margin-top: 0px
+      &__header
+        font-size: 30px
+        margin-bottom: 10px 
+
+@media (max-width: 991px)
+  .wrap__days    
+    .days      
+      width: 75%
+      padding: 30px
+      margin-top: 0px
+      &__img_close
+        width: 20px
+      &__header
+        font-size: 30px
+
+@media (max-width: 768px)
+  .wrap__days    
+    .days      
+      width: 70%
+      height: 550px
+      padding: 30px
+      margin-top: 0px
+      &__arrow_bck
+        left: -40px
+      &__arrow_frwrd
+        right: -40px
+      &__img_close
+        width: 18px
+      &__header
+        font-size: 25px
+      &__sets    
+        .set__header
+          margin-top: 10px         
+        .set__list
+          .set__items
+            margin-top: 5px
+
+
+
+  
+
+@media (max-width: 480px)
+  .wrap__days
+    padding-top: 0px
+    padding-left: 0px 
+    padding: 30px
+    .days
+      position: relative
+      top: 0
+      padding: 20px
+      margin-top: 0px
+      width: 100%
+      height: 589px
+      &__img_close
+        width: 15px
+        top: 10px
+        right: 10px
+      &__arrow_bck
+        width: 12px
+        top: 50%
+        left: -20px
+      &__arrow_frwrd
+        width: 12px
+        top: 50%
+        right: -20px
+      &__header
+        margin-bottom: 10px
+        font-size: 22px
+      &__description
+        padding-right: 30px
+        line-height: 20px 
+      &__sets    
+        .set__header
+          margin-top: 17px
+      
+
+// @media (max-width: 360px)
+
+
+
+/*days stop*/

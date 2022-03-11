@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.13.0.custom/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="js/jquery-ui-1.13.0.custom/external/jquery/jquery.js"></script>
+  <script src="js/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+  <title>Статья1</title>
+</head>
+
+<body>
+  <div class="front-page">
+    <div class="wrap_side-bar">
+      <div class="side-bar">
+        <div class="side-bar_full_default">
+          <div class="side-bar_header">
+            <a href="http://petrova-alina.ru">
+              <img class="header_button_menu"
+                src="img/header_button_menu.svg"
+                alt="header_button_menu">
+            </a>
+            <a href="http://petrova-alina.ru">
+              <img class="alina_petrova_logo"
+                src="img/alina_petrova_logo.svg" alt="Алина Петрова">
+            </a>
+          </div>
+          
+          <div class="side-bar_profile">
+            <div class="wrapAvaAndText">
+              <div class="ava_default"><img src="img/ava_default.svg"
+                  alt="ava_default"></div>
+              <span class="text_Input not_authorized">Вход</span>
+              <span class="authorized-user text_UserName displayNone">Stepanchik</span>
+            </div>
+            <button class="button_register not_authorized">Регистрация</button>
+            <span class="authorized-user button_exit displayNone">ВЫХОД</span>
+            <div class="wrap_sidebar_profile"></div>
+          <!-- /.wrap_sidebar_profile -->
+          </div>
+          <!-- /.side-bar_profile -->
+          <div class="list">
+            <a href="http://petrova-alina.ru/katalog">
+              <div class="catalog">
+                <img class="catalog_icon"
+                  src="img/menu_icon_a_catalog.svg" alt="КАТАЛОГ">
+                <img class="catalog_icon-hover displayNone"
+                  src="img/menu_icon_a_catalog_hover.svg" alt="КАТАЛОГ">
+                <div class="catalog_text">Каталог</div>
+              </div>
+            </a>
+            <!-- /.catalog -->
+            <a href="http://petrova-alina.ru/trenirovki">
+              <div class="exercise">
+                <img class="exercise_icon"
+                  src="img/menu_icon_b_exercise.svg" alt="ТРЕНИРОВКИ">
+                <img class="exercise_icon-hover displayNone"
+                  src="img/menu_icon_b_exercise_hover.svg" alt="ТРЕНИРОВКИ">
+                <div class="exercise_text">Тренировки</div>
+              </div>
+            </a>
+            <!-- /.exercise -->
+            <a href="http://petrova-alina.ru/chat">
+              <div class="chat">
+                <img class="chat_icon" src="img/menu_icon_f_chat.svg"
+                  alt="ЧАТ">
+                <img class="chat_icon-hover displayNone" src="img/menu_icon_f_chat_hover.svg"
+                  alt="ЧАТ">
+                <div class="chat_text">Чат</div>
+              </div>
+            </a>
+            <!-- /.chat -->
+            <a href="http://petrova-alina.ru/ob-aline">
+              <div class="about">
+                <img class="about_icon" src="img/menu_icon_j_about.svg"
+                  alt="ОБ АЛИНЕ">
+                <img class="about_icon-hover displayNone" src="img/menu_icon_j_about_hover.svg"
+                  alt="ОБ АЛИНЕ">
+                <div class="about_text">ОБ АЛИНЕ</div>
+              </div>
+            </a>
+            <!-- /.about -->
+            <a href="http://petrova-alina.ru/faq">
+              <div class="faq">
+                <img class="faq_icon" src="img/menu_icon_i_faq.svg"
+                  alt="FAQ">
+                <img class="faq_icon-hover displayNone" src="img/menu_icon_i_faq_hover.svg"
+                  alt="FAQ">
+                <div class="faq_text">FAQ</div>
+              </div>
+            </a>
+            <!-- /.faq -->
+            <a href="http://petrova-alina.ru/reviews">
+              <div class="review">
+                <img class="review_icon"
+                  src="img/menu_icon_h_review.svg" alt="ОТЗЫВЫ">
+                <img class="review_icon-hover displayNone"
+                  src="img/menu_icon_h_review_hover.svg" alt="ОТЗЫВЫ">
+                <div class="review_text">ОТЗЫВЫ</div>
+              </div>
+            </a>
+            <!-- /.review -->
+            <a href="http://petrova-alina.ru/pitanie" class="displayNone authorized-user">
+              <div class="nutrition">
+                <img class="nutrition_icon"
+                  src="img/menu_icon_c_nutrition.svg" alt="ПИТАНИЕ">
+                <img class="nutrition_icon-hover displayNone"
+                  src="img/menu_icon_c_nutrition_hover.svg" alt="ПИТАНИЕ">
+                <div class="nutrition_text">ПИТАНИЕ</div>
+              </div>
+            </a>
+            <!-- /.nutrition -->
+            <a href="http://petrova-alina.ru/dinamika" class="displayNone authorized-user">
+              <div class="progress">
+                <img class="progress_icon"
+                  src="img/menu_icon_d_progress.svg" alt="ДИНАМИКА">
+                <img class="progress_icon-hover displayNone"
+                  src="img/menu_icon_d_progress_hover.svg" alt="ДИНАМИКА">
+                <div class="progress_text">ДИНАМИКА</div>
+              </div>
+            </a>
+            <!-- /.progress -->
+            <a href="http://petrova-alina.ru/stati" class="displayNone authorized-user">
+              <div class="article">
+                <img class="article_icon"
+                  src="img/menu_icon_e_article.svg" alt="СТАТЬИ">
+                <img class="article_icon-hover displayNone"
+                  src="img/menu_icon_e_article_hover.svg" alt="СТАТЬИ">
+                <div class="article_text">СТАТЬИ</div>
+              </div>
+            </a>
+            <!-- /.article -->
+            <a href="http://petrova-alina.ru/konkursy" class="displayNone authorized-user">
+              <div class="contest">
+                <img class="contest_icon"
+                  src="img/menu_icon_g_contest.svg" alt="КОНКУРСЫ">
+                <img class="contest_icon-hover displayNone"
+                  src="img/menu_icon_g_contest_hover.svg" alt="КОНКУРСЫ">
+                <div class="contest_text">Конкурсы</div>
+              </div>
+            </a>
+            <!-- /.contest -->
+          </div>
+          <!-- /.list -->
+          <div class="side-bar_feedback">
+            <div class="feedback-text">
+              <span>Есть вопросы? Наша служба поддержки работает 24/7. Пиши!</span>
+              <img class="emoji_smile"
+                src="img/menu_feedback_emoji_smile.svg"
+                alt="Emoji_smile">
+            </div>
+            <!-- /.feadback-text -->
+            <button class="feedback-button">ЗАДАТЬ ВОПРОС</button>
+          </div>
+          <!-- /.side-bar_feadback -->
+          <div class="question displayNone">
+            <a class="question-button" href="#">
+              <img class="question__default" src="img/button_default_1285.png" alt="button_default_1285">
+              <img class="question__active displayNone" src="img/button_active_1280.png" alt="button_active_1280">
+            </a>
+          </div>
+        </div>
+        <!-- /.side-bar_full_default -->
+      </div>
+      <!-- /.side-bar -->
+    </div>
+    <!-- /.wrap_side bar -->
+
+    <div class="article1">
+
+      <div class="article1__baner">
+        <img src="img/article1/pic_main_5783.png" alt="img">
+      </div>
+      <!-- article1__baner -->
+
+      <div class="article1__header">
+        <h2>Неудаление Кейна и красная Робертсону</h2>
+        <p>«Тоттенхэм» и «Ливерпуль» искрили не только голами</p>
+      </div>
+      <!-- article1__header -->
+
+      <div class="article1__share">
+        <div class="article1__bg">
+          <p class="share__date">
+            <span>25 декабря 2021, 18:37</span>
+          </p>
+          <p class="share__socialIcons">
+            <span>Поделись:</span>
+            <a href="#">
+              <img class="socialIcon__default" src="img/article1/social_media_default_5847.png" alt="img">
+              <img class="socialIcon__active" src="img/article1/social_media_active_5842.png" alt="img">
+            </a>
+          </p>
+        </div>
+        <!-- article1__bg -->
+      </div>
+      <!-- article1__share -->
+
+      <div class="article1__text">
+        <p>«Дуйсбург» и «Оснабрюк» не доиграли матч в третьей Бундеслиге. Рефери Николас Винтер сначала прервал игру на
+          35-й минуте, а через полчаса — вообще прекратил.</p>
+        <p>«В пользу «Оснабрюка» разыгрывался угловой, а затем последовали обезьяньи выкрики с трибун, — объяснил судья
+          в интервью MagentaSport. — Он (вингер гостей Аарон Опоку) сразу это заметил, как и мой помощник. Оба они
+          рассказали мне об инциденте. Это тот момент, где мы очень чувствительны и реагируем прямо. Я попытался
+          поговорить с игроком — и увидел, что он шокирован».</p>
+        <p>Впервые в истории матч одной из трех ведущих профессиональных лиг Германии прервали из-за расистского
+          инцидента. «Мы не можем принять такое. Аарон больше не мог играть», — заявил управляющий директор «Оснабрюка»
+          Михаэль Веллинг, дав <a href="#">пример ссылки</a>.</p>
+        <p>Он также добавил, что позднее расовому оскорблению подвергся и защитник «Дуйсбурга» Лерой Квадво. Видимо, за
+          то, что пытался поддержать Опоку.</p>
+        <ul>
+          <li><span>22-летний Опоку имеет ганские корни, но родился в Гамбурге и принадлежит одноименному клубу (в
+              «Оснабрюке» в аренде). У 25-летнего Квадво похожая история: его отец эмигрировал из Ганы в 1980-х —
+              сначала учился, а затем играл в низших лигах. Лерой тоже родился уже в Германии.</span></li>
+          <li><span>&#183;</span><span>В «Дуйсбурге» спокойно приняли отмену матча. Пресс-секретарь Мартин Хальтерманн
+              сразу же извинился и назвал решение соперника абсолютно понятным, а президент клуба Инго Вальд осудил
+              поступок болельщика и выразил сожаление о случившемся. Хальтерманн также сообщил, что кричавшего
+              оскорбления идентифицировали — 55-летнего подозреваемого допросила полиция. Контрольный комитет Немецкой
+              футбольной ассоциации (DFB) также расследует инцидент.</span></li>
+        </ul>
+        <p>Фаны обеих команд быстро показали свое отношение. Они еще на стадионе скандировали «Нацисты — вон» и пели
+          Schrei nach Liebe («Крик о любви»), известную песню против неонацистов от панк-группы Die Ärzte. Позже
+          «Герта», «Гладбах», «Нюрнберг» и многие другие клубы пришли в соцсети «Оснабрюка», чтобы поддержать Опоку.
+          Фраза «Нацисты — вон» здесь тоже упоминалась.</p>
+      </div>
+      <!-- article1__text -->
+
+      <div class="article1__line">
+        <div class="line__article1"></div>
+      </div>
+      <!-- article1__line -->
+
+      <div class="article1__header tac">
+        <h2>Я услышал крики, поднял голову и увидел человека, который их издавал. Такого не должно быть ни на стадионе,
+          ни где-либо ещё</h2>
+      </div>
+      <!-- article1__header -->
+
+      <div class="article1__baner2">
+        <img src="img/article1/pic_5849.png" alt="img">
+      </div>
+
+      <div class="article1__textPresident">
+        <h2>Президент призывает навести порядок</h2>
+        <p>Французский футбол в этом сезоне = насилие. Беспорядки происходят так часто, что становятся уже привычным
+          делом. На этот раз заискрило в перерыве игры 1/32 финала Кубка: фанаты «Лиона» в гостях атаковали болельщиков
+          «Парижа» (из Лиги 2, не путать с ПСЖ) — в ход пошла пиротехника и кулаки.</p>
+        <p>«У меня нет слов… мы видели, как в перерыве матча болельщики «Лиона» наносили удары руками. Это напомнило мне
+          ужасные кадры, которые я видел во время футбольного хулиганства в Англии в 1990-е годы», — заявил болельщик
+          «Парижа» Уго в эфире RMC.</p>
+        <p>Но хаос не остановился на трибунах — когда команды хотели продолжить матч, фанаты прорвались на поле.</p>
+        <p>Матч отложили на 45 минут, а затем диктор объявил, что игра отменена и попросил болельщиков покинуть стадион.
+          На момент остановки на табло горели 1:1 — и пока не ясно, что будет дальше.</p>
+      </div>
+      <!-- article1__textPresident -->
+
+      <div class="article1__textClubs">
+        <h2>Клубы обвиняют друг друга</h2>
+        <p>Президент «Парижа» Пьер Ферраччи в ярости: «Это должен был быть большой праздник, но там была группа скотов.
+          Жан-Мишелю Оласу придется успокаивать своих фанатиков. Когда «Лион» и «Марсель» оскорбляют друг друга, другие
+          клубы не должны страдать и получать наказания. Каждый должен брать на себя ответственность. Санкции должны
+          быть показательными.</p>
+        <p>Мы знаем, что инциденты начались с их стороны. Я не допущу, чтобы матч повторился. Инциденты всегда случаются
+          с одними и теми же клубами. Они не болельщики. Я сказал Оласу: «Тебе нужно навести порядок в доме. Вы тянете
+          за собой весь французский футбол».</p>
+      </div>
+      <!-- article1__textClubs -->
+
+      <div class="article1__textClubsWithBaner">
+        <img class="textClubsWithBaner__img" src="img/article1/pic_5730.png" alt="pic5730">
+        <div class="twoParagraphs">
+          <p>Но он ответил мне, что группировка под названием «Панда» из «ПСЖ» приехала атаковать болельщиков «Лиона».
+            Это то, что он говорил человеку, ответственному за безопасность, придумывая разные истории. Насилие
+            произошло прямо у меня на глазах. Это люди, которых без полиции невозможно контролировать».</p>
+          <p class="last">Но он ответил мне, что группировка под названием «Панда» из «ПСЖ» приехала атаковать
+            болельщиков «Лиона». Это то, что он говорил человеку, ответственному за безопасность, придумывая разные
+            истории. Насилие произошло прямо у меня на глазах. Это люди, которых без полиции невозможно контролировать».
+          </p>
+        </div>
+      </div>
+      <!-- article1__textClubsWithBaner -->
+
+      <div class="article1__stadiums">
+        <h2>Французские стадионы захлестнули беспорядки</h2>
+        <p>В этом сезоне Франция никак не может взять под контроль вернувшихся на трибуны болельщиков. Об ужесточении
+          наказаний говорят и в правительстве, но инциденты повторяются постоянно.</p>
+        <p>В матче третьего тура Лиги 1 между «Ниццей» и «Марселем» главным героем стал Димитри Пайет. Тогда игру
+          прервали во втором тайме, хотя фанаты «Ниццы» еще до перерыва забросали соперника мусором. На 75-й минуте
+          Пайет бросил бутылку обратно на трибуну, в ответ фанаты выбежали на поле. Несколько игроков «Марселя»
+          бросились навстречу толпе, вставая на защиту Пайета.</p>
+        <p>Ассистент Сампаоли — Хорхе Десио — даже ударил фаната «Ниццы» по лицу. Обе команды ушли в раздевалки, а
+          президент «Ниццы» Жан-Пьер Ривер уговорил болельщиков покинуть поле. «Марсель» в том случае тоже отказался
+          продолжать, матч переиграли 27 октября в Труа.</p>
+
+      </div>
+      <!-- article1__stadiums -->
+
+      <div class="article1__stadiumsWithRecipe">
+        <div class="stadiumsWithRecipe__text">
+          <p>22 сентября после матча 7-го тура чемпионата «Анжер» — «Марсель» (0:0) массово схлестнулись болельщики,
+            фанаты марсельцев после финального свистка прорвались на поле.</p>
+          <p>30 сентября матч Лиги Европы между «Марселем» и «Галатасараем» (0:0) прервали из-за беспорядков на
+            трибунах. По ходу первого тайма болельщики обеих команд перекидывались файерами, из-за чего игру остановили
+            на 8 минут. Из-за этих инцидентов МВД Франции запретило фанатам «Марселя» ехать на гостевой матч против
+            «Лилля».</p>
+          <h2>Не используй открытые полки</h2>
+          <p>Открытые горизонтальные поверхности — те ещё пылесборники. Дизайнеры интерьеров так их и называют. На фото
+            стеллажи с милыми мелочами, может, и смотрятся классно, но в реальности бытовые предметы и сувениры из
+            поездок там скапливаются сами собой, вы этого не замечаете. И чтобы банально протереть под ними пыль, нужно
+            потратить огромное количество времени. Если отказаться от открытых полок, столиков и тумбочек, проводить
+            уборку станет в разы проще. Пусть их место займут шкафы с дверцами, которые пыль не сможет взять даже
+            штурмом.</p>
+          <h2>Расставляй всё по местам</h2>
+          <p class="last">Следующее решение по-армейски жёсткое. У каждой вещи должно быть своё место, куда она
+            возвращается после
+            использования. Стоит один раз сказать «пусть это полежит пока здесь», и можно готовиться к генеральной
+            уборке. Сняли одежду — повесили в шкаф. Посуду после мытья поставили на сушилку. Детские игрушки вечером
+            сложили в ящик. И так во всём. Если места для хранения заканчиваются, это повод задуматься на тему
+            ответственного потребления: все ли приобретённые вещи нам действительно нужны?</p>
+
+        </div>
+        <!-- stadiumsWithRecipe__text -->
+
+        <div class="stadiumsWithRecipe__recipe">
+          <img src="img/article1/pic_5874.png" alt="5874" class="recipe__img">
+          <h3>Творожная запеканка</h3>
+          <div class="recipe__list">
+            <p>
+              <img src="img/article1/bullet_5856.png" alt="5856">
+              <span>180 г творога;</span>
+            </p>
+            <p>
+              <img src="img/article1/bullet_5856.png" alt="5856">
+              <span>1 яйцо;</span>
+            </p>
+            <p>
+              <img src="img/article1/bullet_5856.png" alt="5856">
+              <span>Половина чайной ложки разрыхлителя;</span>
+            </p>
+            <p>
+              <img src="img/article1/bullet_5856.png" alt="5856">
+              <span>1 ст.л. манки;</span>
+            </p>
+            <p>
+              <img src="img/article1/bullet_5856.png" alt="5856">
+              <span>1 ст.л. сахара;</span>
+            </p>
+            <p>
+              <img src="img/article1/bullet_5856.png" alt="5856">
+              <span>&#8531; ч.л. растительного масла;</span>
+            </p>
+            <p>Запеканку я готова есть и на завтра, и на обед, и на ужин. В СВЧ-печи она готовится очень быстро, поэтому
+              можно не отказывать себе в удовольствии. Главное — купить качественный творог.</p>
+            <p>1. Смешайте творог, яйцо и сахар в миске.</p>
+            <p>2. После этого добавьте манку и разрыхлитель, который сделает запеканку пышнее. Хорошенько размешайте
+              массу венчиком или миксером до однородности.</p>
+            <p>3. Выберите форму, подходящую для микроволновки, и смажьте её подсолнечным маслом. Надо учитывать, что
+              запеканка сильно поднимется, так что берите форму с запасом в пару сантиметров по высоте.</p>
+            <p class="last">4. Поставьте в микроволновку на 10 минут при мощности 800 Вт. При большей мощности время
+              нужно уменьшить.</p>
+          </div>
+          <!-- recipe__list -->
+        </div>
+        <!-- /.stadiumsWithRecipe__recipe -->
+
+      </div>
+      <!-- /.article1__stadiumsWithRecipe -->
+
+      <div class="article1__cleaning">
+        <h2>Все для уборки</h2>
+        <p>Лайфхак прост: соберите необходимый минимум чистящих средств и губок в ведро, ящик с ручкой или даже тканевую
+          корзину. Такой контейнер удобно носить с собой по дому и не возвращаться каждый раз за забытой мелочью. А
+          ограниченный объём заставит вас использовать лишь самые необходимые и эффективные чистящие средства. И кстати,
+          хранить аккуратный ящик тоже проще, чем разномастные баночки, бутылочки и тряпочки. Они так и норовят
+          расползтись по всей ванной комнате.</p>
+      </div>
+      <!-- article1__cleaning -->
+
+      <div class="article1__navigation">
+        <div class="navigation__control_left">
+          <a href="#">
+            <img class="active__img" src="img/article1/pic_active_5882.png" alt="pic_active_5882">
+          </a>
+          <a href="#">
+            <img class="control_left-img" src="img/article1/arrow_bck_5887.png" alt="arrow_bck_5887.png">
+          </a>
+          <a href="#">
+            <h3>Tackling imposter syndrome as a health and fitness professional</h3>
+          </a>
+        </div>
+        <div class="navigation__control_right">
+          <a href="#">
+            <h3>«Шпоры» и «Красные» устроили шоу (2:2)</h3>
+          </a>
+          <a href="#">
+            <img class="control_right-img" src="img/article1/arrow_frwrd_5886.png" alt="arrow_frwrd_5886.png">
+          </a>
+          <a href="#">
+            <img class="active__img" src="img/article1/pic_active_5882.png" alt="pic_active_5882">
+          </a>
+        </div>
+      </div>
+      <!-- /.article1__navigation -->
+
+
+    </div>
+    <!-- article1 -->
+
+
+
+
+  </div>
+  <!-- /.front-page -->
+
+  <div class="wrap-footer">
+    <div class="footer">
+      <span class="footer_copyright">© 2021–2026 Alina Petrova™</span>
+      <a href="#" class="footer_download_google_play"><img src="img/footer_download_google_play_white.svg"
+          alt="google_play"></a>
+      <a href="#" class="footer_download_app_store"><img src="img/footer_download_app_store_white.svg" alt=""></a>
+      <div class="footer_social_media">
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_ig_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_ig_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_vk_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_vk_active.svg" alt="social_media_active" class="displayNone social-media__active"></a>
+        </a>
+        <a class="a-social-media mt3" href="#">
+          <img src="img/01_main/footer_social_yt_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_yt_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_tg_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_tg_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_fb_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_fb_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+      </div>
+    </div>
+    <!-- /.footer -->
+  </div>
+  <!-- /.wrap-footer -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

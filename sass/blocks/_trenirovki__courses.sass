@@ -1,0 +1,162 @@
+/*trenirovki__courses start*/
+
+.trenirovki__courses
+  padding: 20px 40px
+  .details
+    margin: 20px 0
+    background-color: #f1e2cf
+    border: 1px solid #d2bea6
+    border-radius: 10px
+  .summary
+    width: 100%
+    position: relative
+    font-family: $fontFamilyMontserratBold
+    font-size: 15px
+    line-height: 20px
+    font-weight: 900
+    color: #f1e2cf
+    height: 50px
+    background-color: #494450
+    border-radius: 10px
+    padding-left: 40px
+    display: flex
+    align-items: center
+    .icon-header-left
+      position: absolute
+      left: 5px
+      z-index: 0
+    .header-summary
+      position: absolute
+    .icon-open
+      position: absolute
+      display: block
+      width: 24px
+      right: 20px
+      opacity: 0.2
+    .icon-close
+      position: absolute
+      display: none
+      width: 24px
+      right: 20px
+      opacity: 0.2
+      background-color: #f1e2cf
+    .icon-lock
+      position: absolute
+      display: none
+      width: 24px
+      right: 20px
+      opacity: 0.2
+    .divider
+      height: 100%
+      position: absolute
+      right: 60px
+      border-left: 1px solid #837a7c
+    &__content
+      list-style: none
+      padding: 25px 40px
+      display: flex
+      justify-content: space-between
+      .card
+        min-width: 31%
+        &__header
+          display: flex
+          justify-content: space-between
+          height: 50px
+          font-family: $fontFamilyMontserratBold
+          font-size: 20px
+          line-height: 28px
+          font-weight: 900
+          color: #494450
+          .header__state
+            font-size: 16px
+            color: #d2bea6
+        &__img
+          position: relative
+          height: 240px
+          background-color: #d2bea6
+          border-radius: 6px
+          display: flex
+          justify-content: center
+          align-items: center
+          .status-workout
+            position: absolute
+            width: 100%
+            height: 30px
+            bottom: 0
+            opacity: 0.8
+            background-color: #ec274c
+            font-size: 13px
+            line-height: 20px
+            font-weight: 500
+            color: #f1e2cf
+        &__button
+          text-align: center
+          margin: 20px 0
+  .details[open]
+    .summary
+      border-radius: 10px 10px 0px 0px
+      .icon-open
+        display: none
+      .icon-close
+        display: block
+
+@media (max-width: 1199px)
+  .trenirovki__courses
+    .summary__content
+      flex-direction: column
+      align-items: center
+      .card
+        min-width: 210px
+ 
+// @media (max-width: 768px)
+
+@media (max-width: 480px)
+  .trenirovki__courses
+    padding: 0px 0px
+    .details
+      margin: 30px 0px
+      border-radius: 0px 0px 0px 0px
+      .summary
+        width: 100%
+        font-size: 12px
+        line-height: 1.2
+        border-radius: 0px 0px 0px 0px
+        padding-left: 30px
+        .icon-header-left
+        .header-summary
+        .icon-open
+          width: 18px
+        .icon-close
+          width: 18px
+        .icon-lock
+          width: 18px
+        .divider
+          display: none
+      .summary__content
+        overflow-x: auto
+        padding: 10px 30px 25px 30px
+        min-width: 900px
+        .card
+          width: 260px
+          margin-right: 30px
+          &__header
+            display: flex
+            align-items: center
+            height: 30px
+            font-size: 16px
+            line-height: 1.2
+            .header__state
+              font-size: 12px
+          &__img
+            width: 100%
+            height: 190px
+            display: flex
+            .status-workout
+          &__button
+            // margin: 20px 0
+    .details[open]
+      height: 380px
+      .summary
+        border-radius: 0px 0px 0px 0px
+
+/*trenirovki__courses stop*/

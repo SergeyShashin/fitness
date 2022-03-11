@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.04" viewBox="0 0 24 18.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1e2cf;
+        fill-rule: evenodd;
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <path id="program_check_icon_default" class="cls-1" d="M1339.42,1546.15l-9.48-9.43,3.6-3.59,5.88,5.85,10.92-10.85,3.61,3.58Z" transform="translate(-1329.94 -1528.12)"/>
+</svg>

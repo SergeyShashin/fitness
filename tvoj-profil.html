@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.13.0.custom/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="js/jquery-ui-1.13.0.custom/external/jquery/jquery.js"></script>
+  <script src="js/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+  <title>Главная</title>
+</head>
+
+<body>
+  <div class="front-page">
+    <div class="wrap_side-bar">
+      <div class="side-bar">
+        <div class="side-bar_full_default">
+          <div class="side-bar_header">
+            <a href="http://petrova-alina.ru">
+              <img class="header_button_menu" src="img/header_button_menu.svg" alt="header_button_menu">
+            </a>
+            <a href="http://petrova-alina.ru">
+              <img class="alina_petrova_logo" src="img/alina_petrova_logo.svg" alt="Алина Петрова">
+            </a>
+          </div>
+
+          <div class="side-bar_profile">
+            <div class="wrapAvaAndText">
+              <div class="ava_default"><img src="img/ava_default.svg" alt="ava_default"></div>
+              <span class="text_Input not_authorized">Вход</span>
+              <span class="authorized-user text_UserName displayNone">Stepanchik</span>
+            </div>
+            <button class="button_register not_authorized">Регистрация</button>
+            <span class="authorized-user button_exit displayNone">ВЫХОД</span>
+            <div class="wrap_sidebar_profile"></div>
+            <!-- /.wrap_sidebar_profile -->
+          </div>
+          <!-- /.side-bar_profile -->
+          <div class="list">
+            <a href="http://petrova-alina.ru/katalog">
+              <div class="catalog">
+                <img class="catalog_icon" src="img/menu_icon_a_catalog.svg" alt="КАТАЛОГ">
+                <img class="catalog_icon-hover displayNone" src="img/menu_icon_a_catalog_hover.svg" alt="КАТАЛОГ">
+                <div class="catalog_text">Каталог</div>
+              </div>
+            </a>
+            <!-- /.catalog -->
+            <a href="http://petrova-alina.ru/trenirovki">
+              <div class="exercise">
+                <img class="exercise_icon" src="img/menu_icon_b_exercise.svg" alt="ТРЕНИРОВКИ">
+                <img class="exercise_icon-hover displayNone" src="img/menu_icon_b_exercise_hover.svg" alt="ТРЕНИРОВКИ">
+                <div class="exercise_text">Тренировки</div>
+              </div>
+            </a>
+            <!-- /.exercise -->
+            <a href="http://petrova-alina.ru/chat">
+              <div class="chat">
+                <img class="chat_icon" src="img/menu_icon_f_chat.svg" alt="ЧАТ">
+                <img class="chat_icon-hover displayNone" src="img/menu_icon_f_chat_hover.svg" alt="ЧАТ">
+                <div class="chat_text">Чат</div>
+              </div>
+            </a>
+            <!-- /.chat -->
+            <a href="http://petrova-alina.ru/ob-aline">
+              <div class="about">
+                <img class="about_icon" src="img/menu_icon_j_about.svg" alt="ОБ АЛИНЕ">
+                <img class="about_icon-hover displayNone" src="img/menu_icon_j_about_hover.svg" alt="ОБ АЛИНЕ">
+                <div class="about_text">ОБ АЛИНЕ</div>
+              </div>
+            </a>
+            <!-- /.about -->
+            <a href="http://petrova-alina.ru/faq">
+              <div class="faq">
+                <img class="faq_icon" src="img/menu_icon_i_faq.svg" alt="FAQ">
+                <img class="faq_icon-hover displayNone" src="img/menu_icon_i_faq_hover.svg" alt="FAQ">
+                <div class="faq_text">FAQ</div>
+              </div>
+            </a>
+            <!-- /.faq -->
+            <a href="http://petrova-alina.ru/reviews">
+              <div class="review">
+                <img class="review_icon" src="img/menu_icon_h_review.svg" alt="ОТЗЫВЫ">
+                <img class="review_icon-hover displayNone" src="img/menu_icon_h_review_hover.svg" alt="ОТЗЫВЫ">
+                <div class="review_text">ОТЗЫВЫ</div>
+              </div>
+            </a>
+            <!-- /.review -->
+            <a href="http://petrova-alina.ru/pitanie" class="displayNone authorized-user">
+              <div class="nutrition">
+                <img class="nutrition_icon" src="img/menu_icon_c_nutrition.svg" alt="ПИТАНИЕ">
+                <img class="nutrition_icon-hover displayNone" src="img/menu_icon_c_nutrition_hover.svg" alt="ПИТАНИЕ">
+                <div class="nutrition_text">ПИТАНИЕ</div>
+              </div>
+            </a>
+            <!-- /.nutrition -->
+            <a href="http://petrova-alina.ru/dinamika" class="displayNone authorized-user">
+              <div class="progress">
+                <img class="progress_icon" src="img/menu_icon_d_progress.svg" alt="ДИНАМИКА">
+                <img class="progress_icon-hover displayNone" src="img/menu_icon_d_progress_hover.svg" alt="ДИНАМИКА">
+                <div class="progress_text">ДИНАМИКА</div>
+              </div>
+            </a>
+            <!-- /.progress -->
+            <a href="http://petrova-alina.ru/stati" class="displayNone authorized-user">
+              <div class="article">
+                <img class="article_icon" src="img/menu_icon_e_article.svg" alt="СТАТЬИ">
+                <img class="article_icon-hover displayNone" src="img/menu_icon_e_article_hover.svg" alt="СТАТЬИ">
+                <div class="article_text">СТАТЬИ</div>
+              </div>
+            </a>
+            <!-- /.article -->
+            <a href="http://petrova-alina.ru/konkursy" class="displayNone authorized-user">
+              <div class="contest">
+                <img class="contest_icon" src="img/menu_icon_g_contest.svg" alt="КОНКУРСЫ">
+                <img class="contest_icon-hover displayNone" src="img/menu_icon_g_contest_hover.svg" alt="КОНКУРСЫ">
+                <div class="contest_text">Конкурсы</div>
+              </div>
+            </a>
+            <!-- /.contest -->
+          </div>
+          <!-- /.list -->
+          <div class="side-bar_feedback">
+            <div class="feedback-text">
+              <span>Есть вопросы? Наша служба поддержки работает 24/7. Пиши!</span>
+              <img class="emoji_smile" src="img/menu_feedback_emoji_smile.svg" alt="Emoji_smile">
+            </div>
+            <!-- /.feadback-text -->
+            <button class="feedback-button">ЗАДАТЬ ВОПРОС</button>
+          </div>
+          <!-- /.side-bar_feadback -->
+          <div class="question displayNone">
+            <a class="question-button" href="#">
+              <img class="question__default" src="img/button_default_1285.png" alt="button_default_1285">
+              <img class="question__active displayNone" src="img/button_active_1280.png" alt="button_active_1280">
+            </a>
+          </div>
+        </div>
+        <!-- /.side-bar_full_default -->
+      </div>
+      <!-- /.side-bar -->
+    </div>
+    <!-- /.wrap_side bar -->
+
+    <div class="your-profile">
+      <div class="your-profile_header">
+        <h2>Твой профиль</h2>
+      </div>
+      <!-- /.your-profile_header -->
+      <div class="your-profile_login">
+        <div class="login_left">
+          <div class="wrap">
+            <label class="label_input" for="login">Логин</label>
+            <input id="login" class="input_login" type="text" value="Stepanchik">
+          </div>
+          <div class="wrap">
+            <label class="label_input" for="female">Пол</label>
+            <div class="female">
+              <button class="button button__brl10 button__default" id="female">Женский</button>
+              <button class="button">Мужской</button>
+              <button class="button button__brr10">Иной</button>
+            </div>
+          </div>
+          <div class="wrap_heightAndWeight">
+            <div class="wrap_height">
+              <label class="label_input" for="height">Рост (см)</label>
+              <div class="df">
+                <button class="button button__height button__brl10">
+                  <span class="minus"></span>
+                </button>
+                <input id='height' class="input_login input_login_height" type="text" value="150">
+                <button class="button button__height button__brr10">+</button>
+              </div>
+            </div>
+            <!-- wrap_height -->
+            <div class="wrap_weight">
+              <label class="label_input" for="weight">Вес (кг)</label>
+              <div class="df">
+                <button class="button button__height button__brl10">
+                  <span class="minus"> </span>
+                </button>
+                <input id='weight' class="input_login input_login_height" type="text" value="60">
+                <button class="button button__height button__brr10">+</button>
+              </div>
+            </div>
+            <!-- wrap_weight -->
+          </div>
+          <div class="wrap_birthday">
+            <label class="label_input" for="birthday">Дата рождения</label>
+            <div class="df">
+              <input id='birth_day' class="input_login input_login_birthday brl10" type="text" value="29">
+              <input id='birth_month' class="input_login input_login_birthday" type="text" value="04">
+              <input id='birth_year' class="input_login input_login_year brr10 tac" type="text" value="гггг">
+            </div>
+          </div>
+          <!-- wrap_birthday -->
+        </div>
+        <!-- /.login_left -->
+        <div class="login_right">
+          <div class="login_photo">
+            <img src="img/03_profile/ava_frame_default_3855.png" alt="ava_frame" class="login_img_ava">
+            <img src="img/03_profile/icon_add_photo.svg" alt="icon_add_photo" class="login_photo_img">
+            <div class="text_login_photo">Перетащи аватар в это поле</div>
+          </div>
+        </div>
+        <!-- /.login_right -->
+      </div>
+      <!-- /.your-profile_login -->
+
+      <div class="your-profile-contacts">
+        <div class="your-profile-contacts_header">Контакты</div>
+        <div class="wrap_mail">
+          <label class="label_input" for="mail">Почта</label>
+          <input id="mail" class="input_mail" type="text" value="77777@ya.kz">
+        </div>
+        <!-- wrap_mail -->
+        <div class="wrap_country">
+          <label class="label_input" for="country">Страна</label>
+          <details name="country" id="country" class="details-country">
+            <summary class="summary-country russia" value="Russia">
+              <div class="wrap df">
+                <div class="scrollbar">
+                  <div class="scrollbar-control"></div>
+                </div>
+                <img src="img/03_profile/flag_russia.svg" alt="flag" class="img_country">
+                Россия!
+              </div>
+              <img class="img_dropdown" src="img/03_profile/icon_dropdown.svg" alt="icon_dropdown">
+            </summary>
+            <summary class="summary-country armenia" value="Armenia">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_armenia.svg" alt="flag" class="img_country">
+                Армения
+              </div>
+            </summary>
+            <summary class="summary-country azerbaijan" value="Azerbaijan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_azerbaijan.svg" alt="flag" class="img_country">
+                Азейбарджан
+              </div>
+            </summary>
+            <summary class="summary-country belarus" value="Belarus">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_belarus.svg" alt="flag" class="img_country">
+                Беларусь
+              </div>
+            </summary>
+            <summary class="summary-country estonia" value="Estonia">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_estonia.svg" alt="flag" class="img_country">
+                Эстония
+              </div>
+            </summary>
+            <summary class="summary-country georgia" value="Georgia">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_georgia.svg" alt="flag" class="img_country">
+                Грузия
+              </div>
+            </summary>
+            <summary class="summary-country kazakhstan" value="Kazakhstan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_kazakhstan.svg" alt="flag" class="img_country">
+                Казахстан
+              </div>
+            </summary>
+            <summary class="summary-country kyrgyzstan" value="Kyrgyzstan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_kyrgyzstan.svg" alt="flag" class="img_country">
+                Киргизия
+              </div>
+            </summary>
+            <summary class="summary-country latvia" value="Latvia">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_latvia.svg" alt="flag" class="img_country">
+                Латвия
+              </div>
+            </summary>
+            <summary class="summary-country lithuania" value="Lithuania">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_lithuania.svg" alt="flag" class="img_country">
+                Литва
+              </div>
+            </summary>
+            <summary class="summary-country moldova" value="Moldova">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_moldova.svg" alt="flag" class="img_country">
+                Молдова
+              </div>
+            </summary>
+            <summary class="summary-country tajikistan" value="Tajikistan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_tajikistan.svg" alt="flag" class="img_country">
+                Таджикистан
+              </div>
+            </summary>
+            <summary class="summary-country turkmenistan" value="Turkmenistan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_turkmenistan.svg" alt="flag" class="img_country">
+                Туркменестан
+              </div>
+            </summary>
+            <summary class="summary-country ukraine" value="Ukraine">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_ukraine.svg" alt="flag" class="img_country">
+                Украина
+              </div>
+            </summary>
+            <summary class="summary-country uzbekistan" value="Uzbekistan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_uzbekistan.svg" alt="flag" class="img_country">
+                Узбекистан
+              </div>
+            </summary>
+          </details>
+        </div>
+        <!-- wrap_country -->
+
+        <div class="wrap_phone">
+          <label class="label_input" for="phone">Телефон</label>
+          <input id="phone" class="input_phone" type="text" value="+79033773">
+        </div>
+        <!-- wrap_phone -->
+
+        <div class="wrap_social-network">
+          <label class="label_input" for="social-network">Соцсеточка <span class="label_input_span">(токмо одна, чисто
+              на всякий)</span></label>
+          <div class="wrap df social-network-deatailsAndInput">
+            <details class="details-social-network">
+              <summary class="summary-social-network">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_instagram.svg" alt="social_instagram">
+                  инста
+                </div>
+                <img class="img_dropdown" src="img/03_profile/icon_dropdown.svg" alt="icon_dropdown">
+                <input id="social-network" class="input_social-network input_social-network-open" type="text"
+                  value="vspomozheniyekstansz">
+
+              </summary>
+              <summary class="summary-social-network">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_telegram.svg" alt="social_telegram">
+                  тележка
+                </div>
+                <input id="social-network" class="input_social-network displayNone input_social-network-open"
+                  type="text">
+              </summary>
+              <summary class="summary-social-network">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_vk.svg" alt="social_vk">
+                  контактик
+                </div>
+                <input id="social-network" class="input_social-network displayNone input_social-network-open"
+                  type="text">
+              </summary>
+              <summary class="summary-social-network">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_fb.svg" alt="social_fb.svg">
+                  фейсбучка
+                </div>
+                <input id="social-network" class="input_social-network displayNone input_social-network-open"
+                  type="text">
+              </summary>
+            </details>
+            <!-- /.details-social-network -->
+            <input id="social-network" class="input_social-network displayNone" type="text"
+              value="vspomozheniyekstansz">
+          </div>
+        </div>
+        <!-- wrap_social-network -->
+      </div>
+      <!-- /.your-profile_contacts -->
+
+      <div class="your-profile_change-pasword">
+        <div class="your-profile_change-pasword_header">Смена пароля</div>
+        <div class="wrap_pasword">
+          <label class="label_input" for="pasword">Текущий пароль</label>
+          <input id="pasword" class="input_pasword" type="text" value="012345678">
+          <img id="icon_eye_close" class="icon_eye_close" src="img/03_profile/icon_eye_close_2170.png"
+            alt="icon_eye_close">
+          <img id="icon_eye_open" class="icon_eye_open" src="img/03_profile/icon_eye_open_2178.png" alt="icon_eye_open">
+          <span id="error-message" class="error-message">В пароль закралась опечатка((</span>
+        </div>
+        <!-- wrap_password -->
+        <div class="wrap_new-pasword">
+          <label class="label_input" for="new-pasword">Новый пароль</label>
+          <input id="new-pasword" class="input_new-pasword" type="text" value="m88{hKBB{Wf8f}th~TFe0Q2b$Jmx3y">
+          <img id="icon_eye_close-new" class="icon_eye_close-new" src="img/03_profile/icon_eye_close_2170.png"
+            alt="icon_eye_close">
+          <img id="icon_eye_open-new" class="icon_eye_open-new" src="img/03_profile/icon_eye_open_2178.png"
+            alt="icon_eye_open-new">
+        </div>
+        <!-- wrap_new-password -->
+        <button class="button-change-paspword">Сменить пароль</button>
+        <!-- /.button__change-paspword -->
+      </div>
+      <!-- /.your-profile_change-pasword -->
+
+      <div class="your-profile_notifications">
+        <div class="your-profile_notifications_header">Уведомления</div>
+        <div class="your-profile_notifications_checkAndText">
+          <div class="check_notifications">
+            <img src="img/03_profile/icon_selected.svg" alt="icon_selected">
+          </div>
+          <div class="text_notifications">
+            <h5>Хочу получать рассылки по почте</h5>
+            <p>Обновление питания, тренировок, ответы в чатах, промокоды, акции и скидки. Только важное и полезное</p>
+          </div>
+        </div>
+        <!-- /.wrap_checkAndTextNotifications -->
+      </div>
+      <!-- /.your-profile_notifications -->
+
+      <div class="your-profile_buttons">
+        <button class="button-save-all">Сохранить все</button>
+        <button class="button-return-as-atwas button-return-as-atwas_your-profile_buttons">Вернуть как было</button>
+      </div>
+      <!-- /.your-profile_buttons -->
+
+    </div>
+    <!-- /.your-profile -->
+
+  </div>
+  <!-- /.front-page -->
+
+  <div class="wrap-footer">
+    <div class="footer">
+      <span class="footer_copyright">© 2021–2026 Alina Petrova™</span>
+      <a href="#" class="footer_download_google_play"><img src="img/footer_download_google_play_white.svg"
+          alt="google_play"></a>
+      <a href="#" class="footer_download_app_store"><img src="img/footer_download_app_store_white.svg" alt=""></a>
+      <div class="footer_social_media">
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_ig_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_ig_active.svg" alt="social_media_active"
+            class="displayNone social-media__active">
+        </a>
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_vk_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_vk_active.svg" alt="social_media_active"
+            class="displayNone social-media__active"></a>
+        </a>
+        <a class="a-social-media mt3" href="#">
+          <img src="img/01_main/footer_social_yt_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_yt_active.svg" alt="social_media_active"
+            class="displayNone social-media__active">
+        </a>
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_tg_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_tg_active.svg" alt="social_media_active"
+            class="displayNone social-media__active">
+        </a>
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_fb_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_fb_active.svg" alt="social_media_active"
+            class="displayNone social-media__active">
+        </a>
+      </div>
+    </div>
+    <!-- /.footer -->
+  </div>
+  <!-- /.wrap-footer -->
+
+  <div class="main-mobile">
+    <!-- при клике по headerMobileButtonMenu отключить у wrapSidebarMobile displayNone -->
+    <!-- при клике по sidebarMobileHeaderButtonClose включить у wrapSidebarMobile displayNone -->
+    <div id="wrapSidebarMobile" class="wrap__sidebar-mobile displayNone">
+      <div class="sidebar-mobile">
+        <div class="sidebar-mobile__header header-mobile">
+          <a href="http://petrova-alina.ru">
+            <img id="sidebarMobileHeaderButtonHome" class="header-mobile__button-back"
+              src="img/01_main_mobile/menu_button_home_28.png" alt="menu_button_home_28.png">
+          </a>
+          <a href="http://petrova-alina.ru">
+            <img class="header-mobile__logo" src="img/01_main_mobile/alina_petrova_logo_light_664.png"
+              alt="alina_petrova_logo_light_664">
+          </a>
+          <img id="sidebarMobileHeaderButtonClose" class="header-mobile__button-menu"
+            src="img/01_main_mobile/menu_button_close_18.png" alt="menu_button_close_18">
+        </div>
+        <!-- /.sidebar-mobile__header -->
+
+        <div class="list sidebar-mobile__list">
+          <a href="http://petrova-alina.ru/katalog">
+            <div class="catalog">
+              <img class="catalog_icon" src="img/menu_icon_a_catalog.svg" alt="КАТАЛОГ">
+              <div class="catalog_text">Каталог</div>
+            </div>
+          </a>
+          <!-- /.catalog -->
+          <a href="http://petrova-alina.ru/trenirovki">
+            <div class="exercise">
+              <img class="exercise_icon" src="img/menu_icon_b_exercise.svg" alt="ТРЕНИРОВКИ">
+              <div class="exercise_text">Тренировки</div>
+            </div>
+          </a>
+          <!-- /.exercise -->
+          <a href="http://petrova-alina.ru/chat">
+            <div class="chat">
+              <img class="chat_icon" src="img/menu_icon_f_chat.svg" alt="ЧАТ">
+              <div class="chat_text">Чат</div>
+            </div>
+          </a>
+          <!-- /.chat -->
+          <a href="http://petrova-alina.ru/ob-aline">
+            <div class="about">
+              <img class="about_icon" src="img/menu_icon_j_about.svg" alt="ОБ АЛИНЕ">
+              <div class="about_text">ОБ АЛИНЕ</div>
+            </div>
+          </a>
+          <!-- /.about -->
+          <a href="http://petrova-alina.ru/faq">
+            <div class="faq">
+              <img class="faq_icon" src="img/menu_icon_i_faq.svg" alt="FAQ">
+              <div class="faq_text">FAQ</div>
+            </div>
+          </a>
+          <!-- /.faq -->
+          <a href="http://petrova-alina.ru/reviews">
+            <div class="review">
+              <img class="review_icon" src="img/menu_icon_h_review.svg" alt="ОТЗЫВЫ">
+              <div class="review_text">ОТЗЫВЫ</div>
+            </div>
+          </a>
+          <!-- /.review -->
+          <a href="http://petrova-alina.ru/pitanie" class="authorized-user displayNone">
+            <div class="nutrition">
+              <img class="nutrition_icon" src="img/menu_icon_c_nutrition.svg" alt="ПИТАНИЕ">
+              <div class="nutrition_text">ПИТАНИЕ</div>
+            </div>
+          </a>
+          <!-- /.nutrition -->
+          <a href="http://petrova-alina.ru/dinamika" class="authorized-user displayNone">
+            <div class="progress authorized-user">
+              <img class="progress_icon" src="img/menu_icon_d_progress.svg" alt="ДИНАМИКА">
+              <div class="progress_text">ДИНАМИКА</div>
+            </div>
+          </a>
+          <!-- /.progress -->
+          <a href="http://petrova-alina.ru/stati" class="authorized-user displayNone">
+            <div class="article authorized-user">
+              <img class="article_icon" src="img/menu_icon_e_article.svg" alt="СТАТЬИ">
+              <div class="article_text">СТАТЬИ</div>
+            </div>
+          </a>
+          <!-- /.article -->
+          <a href="http://petrova-alina.ru/konkursy" class="authorized-user displayNone">
+            <div class="contest authorized-user">
+              <img class="contest_icon" src="img/menu_icon_g_contest.svg" alt="КОНКУРСЫ">
+              <div class="contest_text">Конкурсы</div>
+            </div>
+          </a>
+          <!-- /.contest -->
+        </div>
+        <!-- /.list -->
+
+        <div class="sidebar-mobile__aplications">
+          <p>Качай удобное выгодное приложение</p>
+          <div class="aplications">
+            <a href="#" class="google">
+              <img src="img/01_main_mobile/frame_download_app_751.png" alt="frame_download_app_751">
+            </a>
+            <a href="#" class="app-store">
+              <img src="img/01_main_mobile/frame_download_app_752.png" alt="frame_download_app_752">
+            </a>
+          </div>
+        </div>
+        <!-- /.sidebar-mobile__aplications -->
+
+        <div class="side-bar_feedback sidebar-mobile__feedback">
+          <div class="feedback-text feedback-text__mobile">
+            <span>Есть вопросы? Наша служба поддержки работает 24/7. Пиши!</span>
+            <img class="emoji_smile" src="img/menu_feedback_emoji_smile.svg" alt="Emoji_smile">
+          </div>
+          <!-- /.feadback-text -->
+          <button class="feedback-button feedback-button__mobile">ЗАДАТЬ ВОПРОС</button>
+        </div>
+        <!-- /.side-bar_feadback -->
+        <div class="question displayNone">
+          <a href="#">
+            <img src="img/01_main/button_default_1285.png" alt="button_default_1285">
+          </a>
+        </div>
+
+        <div class="sidebar-mobile__social-network">
+          <a class="a-social-media" href="#">
+            <img src="img/01_main/footer_social_ig_default.svg" alt="social_media_default"
+              class="social-media__default">
+            <img src="img/01_main/footer_social_ig_active.svg" alt="social_media_active"
+              class="displayNone social-media__active">
+          </a>
+          <a class="a-social-media" href="#">
+            <img src="img/01_main/footer_social_vk_default.svg" alt="social_media_default"
+              class="social-media__default">
+            <img src="img/01_main/footer_social_vk_active.svg" alt="social_media_active"
+              class="displayNone social-media__active"></a>
+          </a>
+          <a class="a-social-media mt3" href="#">
+            <img src="img/01_main/footer_social_yt_default.svg" alt="social_media_default"
+              class="social-media__default">
+            <img src="img/01_main/footer_social_yt_active.svg" alt="social_media_active"
+              class="displayNone social-media__active">
+          </a>
+          <a class="a-social-media" href="#">
+            <img src="img/01_main/footer_social_tg_default.svg" alt="social_media_default"
+              class="social-media__default">
+            <img src="img/01_main/footer_social_tg_active.svg" alt="social_media_active"
+              class="displayNone social-media__active">
+          </a>
+          <a class="a-social-media" href="#">
+            <img src="img/01_main/footer_social_fb_default.svg" alt="social_media_default"
+              class="social-media__default">
+            <img src="img/01_main/footer_social_fb_active.svg" alt="social_media_active"
+              class="displayNone social-media__active">
+          </a>
+        </div>
+        <!-- /.sidebar-mobile__social-network -->
+
+      </div>
+      <!-- /.sidebar-mobile -->
+
+    </div>
+    <!-- /.wrap__sidebar-mobile -->
+
+    <header class="header-mobile">
+      <a href="http://petrova-alina.ru/">
+        <img id="headerMobileButtonBack" class="header-mobile__button-back"
+          src="img/01_main_mobile/header_button_back_15.png" alt="header_button_back_15">
+      </a>
+      <a href="http://petrova-alina.ru">
+        <img src="img/01_main_mobile/alina_petrova_logo_light_664.png" alt="alina_petrova_logo_light_664"
+          class="header-mobile__logo">
+      </a>
+      <img id="headerMobileButtonMenu" src="img/01_main_mobile/header_button_menu_14.png" alt="header_button_menu_14"
+        class="header-mobile__button-menu">
+    </header>
+    <!-- /.header-mobile -->
+
+    <div id="yourProfileMobile" class="your-profile">
+      <div class="your-profile_header">
+        <h2>Твой профиль</h2>
+      </div>
+      <!-- /.your-profile_header -->
+
+      <div class="your-profile_ava">
+        <!-- <img src="img/03_profile/ava_frame_default_1946.png" alt="ava_frame_default_1946.png" class="ava_frame_default">         -->
+        <!-- <img src="img/03_profile/ava_frame_stroke_2021.png" alt="ava_frame_stroke_2021.png" class="ava_frame_stroke">         -->
+        <div class="ava-frame">
+          <img src="img/03_profile/icon_add_photo_mobile_2025.png" alt="icon_add_photo_mobile_2025.png">
+          <img class="ava-frame_stroke displayNone" src="img/03_profile/ava_frame_stroke_2021.png"
+            alt="ava_frame_stroke_2021.png">
+        </div>
+      </div>
+
+      <div class="your-profile_login">
+        <div class="login_left">
+          <div class="wrap">
+            <label class="label_input" for="login">Логин</label>
+            <input id="login" class="input_login" type="text" value="Stepanchik">
+          </div>
+          <div class="wrap">
+            <label class="label_input" for="female">Пол</label>
+            <div class="female">
+              <button class="button button__brl10 button__default" id="female">Женский</button>
+              <button class="button">Мужской</button>
+              <button class="button button__brr10">Иной</button>
+            </div>
+          </div>
+          <div class="wrap_heightAndWeight">
+            <div class="wrap_height">
+              <label class="label_input" for="height">Рост (см)</label>
+              <div class="df">
+                <button class="button button__height button__brl10">
+                  <span class="minus"></span>
+                </button>
+                <input id='height' class="input_login input_login_height" type="text" value="150">
+                <button class="button button__height button__brr10">+</button>
+              </div>
+            </div>
+            <!-- wrap_height -->
+            <div class="wrap_weight">
+              <label class="label_input" for="weight">Вес (кг)</label>
+              <div class="df">
+                <button class="button button__height button__brl10">
+                  <span class="minus"> </span>
+                </button>
+                <input id='weight' class="input_login input_login_height" type="text" value="60">
+                <button class="button button__height button__brr10">+</button>
+              </div>
+            </div>
+            <!-- wrap_weight -->
+          </div>
+          <div class="wrap_birthday">
+            <label class="label_input" for="birthday">Дата рождения</label>
+            <div class="df">
+              <input id='birth_day' class="input_login input_login_birthday brl10" type="text" value="29">
+              <input id='birth_month' class="input_login input_login_birthday" type="text" value="04">
+              <input id='birth_year' class="input_login input_login_year brr10 tac" type="text" value="гггг">
+            </div>
+          </div>
+          <!-- wrap_birthday -->
+        </div>
+        <!-- /.login_left -->
+
+      </div>
+      <!-- /.your-profile_login -->
+
+      <div class="your-profile-contacts">
+        <div class="your-profile-contacts_header">Контакты</div>
+        <div class="wrap_mail">
+          <label class="label_input" for="mail">Почта</label>
+          <input id="mail" class="input_mail" type="text" value="77777@ya.kz">
+        </div>
+        <!-- wrap_mail -->
+        <div class="wrap_country">
+          <label class="label_input" for="country">Страна</label>
+          <details name="country" id="country" class="details-country">
+            <summary id="summaryCountryMobile" class="summary-country russia" value="Russia">
+              <div class="wrap df">
+                <div class="scrollbar">
+                  <div class="scrollbar-control"></div>
+                </div>
+                <img src="img/03_profile/flag_russia.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Россия!
+              </div>
+              <img class="img_dropdown" src="img/03_profile/icon_dropdown.svg" alt="icon_dropdown">
+              <img class="img_close-mobile displayNone" src="img/03_profile/icon_close_2139.png"
+                  alt="icon_close_2139.png">
+            </summary>
+            <summary class="summary-country armenia" value="Armenia">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_armenia.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Армения
+              </div>
+            </summary>
+            <summary class="summary-country azerbaijan" value="Azerbaijan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_azerbaijan.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Азейбарджан
+              </div>
+            </summary>
+            <summary class="summary-country belarus" value="Belarus">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_belarus.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Беларусь
+              </div>
+            </summary>
+            <summary class="summary-country estonia" value="Estonia">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_estonia.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Эстония
+              </div>
+            </summary>
+            <summary class="summary-country georgia" value="Georgia">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_georgia.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Грузия
+              </div>
+            </summary>
+            <summary class="summary-country kazakhstan" value="Kazakhstan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_kazakhstan.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Казахстан
+              </div>
+            </summary>
+            <summary class="summary-country kyrgyzstan" value="Kyrgyzstan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_kyrgyzstan.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Киргизия
+              </div>
+            </summary>
+            <summary class="summary-country latvia" value="Latvia">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_latvia.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Латвия
+              </div>
+            </summary>
+            <summary class="summary-country lithuania" value="Lithuania">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_lithuania.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Литва
+              </div>
+            </summary>
+            <summary class="summary-country moldova" value="Moldova">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_moldova.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Молдова
+              </div>
+            </summary>
+            <summary class="summary-country tajikistan" value="Tajikistan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_tajikistan.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Таджикистан
+              </div>
+            </summary>
+            <summary class="summary-country turkmenistan" value="Turkmenistan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_turkmenistan.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Туркменестан
+              </div>
+            </summary>
+            <summary class="summary-country ukraine" value="Ukraine">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_ukraine.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Украина
+              </div>
+            </summary>
+            <summary class="summary-country uzbekistan" value="Uzbekistan">
+              <div class="wrap df">
+                <img src="img/03_profile/flag_uzbekistan.svg" alt="flag" class="img_country">
+                <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_country-selected displayNone">
+                Узбекистан
+              </div>
+            </summary>
+          </details>
+        </div>
+        <!-- wrap_country -->
+
+        <div class="wrap_phone">
+          <label class="label_input" for="phone">Телефон</label>
+          <input id="phone" class="input_phone" type="text" value="+79033773">
+        </div>
+        <!-- wrap_phone -->
+
+        <div class="wrap_social-network">
+          <label class="label_input" for="social-network">Соцсеточка <span class="label_input_span">(токмо одна, чисто
+              на всякий)</span></label>
+          <div class="wrap df social-network-deatailsAndInput">
+            <details class="details-social-network">
+              <summary id="summarySocialNetworkMobile" class="summary-social-network">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_instagram.svg" alt="social_instagram">
+                </div>
+                <img class="img_dropdown" src="img/03_profile/icon_dropdown.svg" alt="icon_dropdown">
+                <img class="img_close-mobile displayNone" src="img/03_profile/icon_close_2139.png"
+                  alt="icon_close_2139.png">
+                <input id="social-network" class="input_social-network input_social-network-open" type="text"
+                  value="vspomozheniyekstanszsdfsdfdsfsdfsdfdsf">
+                <div class="transparent-filter"></div>
+              </summary>
+              <summary class="summary-social-network telegram">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_telegram.svg" alt="social_telegram">
+                  <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_social-selected displayNone">
+                  тележка
+                </div>
+                <input id="social-network" class="input_social-network displayNone input_social-network-open"
+                  type="text">
+              </summary>
+              <summary class="summary-social-network instagram">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_instagram.svg" alt="social_instagram">
+                  <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_social-selected displayNone">
+                  инста
+                </div>
+                <input id="social-network" class="input_social-network displayNone input_social-network-open"
+                  type="text">
+              </summary>
+              <summary class="summary-social-network vk">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_vk.svg" alt="social_vk">
+                  <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_social-selected displayNone">
+                  контактик
+                </div>
+                <input id="social-network" class="input_social-network displayNone input_social-network-open"
+                  type="text">
+              </summary>
+              <summary class="summary-social-network fb">
+                <div class="wrap df">
+                  <img class="img_social" src="img/03_profile/social_fb.svg" alt="social_fb.svg">
+                  <img src="img/03_profile/icon_selected_2082.png" alt="icon_selected_2082.png" class="img_social-selected displayNone">
+                  фейсбучка
+                </div>
+                <input id="social-network" class="input_social-network displayNone input_social-network-open"
+                  type="text">
+              </summary>
+            </details>
+            <!-- /.details-social-network -->
+            <input id="social-network" class="input_social-network displayNone" type="text"
+              value="vspomozheniyekstansz">
+          </div>
+        </div>
+        <!-- wrap_social-network -->
+      </div>
+      <!-- /.your-profile_contacts -->
+
+      <div class="your-profile_change-pasword">
+        <div class="your-profile_change-pasword_header">Смена пароля</div>
+        <div class="wrap_pasword">
+          <label class="label_input" for="pasword">Текущий пароль</label>
+          <input id="pasword" class="input_pasword input_error" type="text" value="* * * * * * *">
+          <img id="icon_eye_close" class="icon_eye_close" src="img/03_profile/icon_eye_close_2170.png"
+            alt="icon_eye_close">
+          <img id="icon_eye_open" class="icon_eye_open" src="img/03_profile/icon_eye_open_2178.png" alt="icon_eye_open">
+          <span id="error-message" class="error-message">В пароль закралась опечатка((</span>
+        </div>
+        <!-- wrap_password -->
+        <div class="wrap_new-pasword">
+          <label class="label_input" for="new-pasword">Новый пароль</label>
+          <input id="new-pasword" class="input_new-pasword" type="text"
+            value="m88{hKBB{Wf8f}th~TFe0sdsdQ2bsdfdsfsdf$Jmx3y">
+          <div class="transparent-filter transparent-filter_new-password"></div>
+          <img id="icon_eye_close-new" class="icon_eye_close-new" src="img/03_profile/icon_eye_close_2170.png"
+            alt="icon_eye_close">
+          <img id="icon_eye_open-new" class="icon_eye_open-new" src="img/03_profile/icon_eye_open_2178.png"
+            alt="icon_eye_open-new">
+        </div>
+        <!-- wrap_new-password -->
+
+        <div class="wrap_button-change-password">
+          <button class="button-change-paspword">Сменить пароль</button>
+          <!-- /.button__change-paspword -->
+        </div>
+        <!-- /.button__change-paspword -->
+      </div>
+      <!-- /.wrap_button-change-password -->
+
+      <div class="your-profile_notifications">
+        <div class="your-profile_notifications_header">Уведомления</div>
+        <div class="your-profile_notifications_checkAndText">
+          <div class="check_notifications">
+            <img src="img/03_profile/icon_selected.svg" alt="icon_selected">
+          </div>
+          <div class="text_notifications">
+            <h5>Хочу получать рассылки по почте</h5>
+            <p>Обновление питания, тренировок, ответы в чатах, промокоды, акции и скидки. Только важное и полезное</p>
+          </div>
+        </div>
+        <!-- /.wrap_checkAndTextNotifications -->
+      </div>
+      <!-- /.your-profile_notifications -->
+
+      <div class="your-profile_buttons">
+        <button class="button-save-all">Сохранить все</button>
+        <button class="button-return-as-atwas button-return-as-atwas_your-profile_buttons">Вернуть как было</button>
+      </div>
+      <!-- /.your-profile_buttons -->
+
+    </div>
+    <!-- /.your-profile -->
+
+
+
+    <footer class="footer-mobile">
+      <a href="http://petrova-alina.ru/trenirovki/" class="footer-mobile__buttons">
+        <img src="img/01_main_mobile/menu_icon_b_exercise_407.png" alt="menu_icon_b_exercise_407.png">
+        <h5>Тренировки</h5>
+      </a>
+      <a href="http://petrova-alina.ru/pitanie/" class="footer-mobile__buttons">
+        <img src="img/01_main_mobile/menu_icon_c_nutrition_395.png" alt="menu_icon_c_nutrition_395">
+        <h5>Питание</h5>
+      </a>
+      <a href="http://petrova-alina.ru/articles/" class="footer-mobile__buttons">
+        <img src="img/01_main_mobile/menu_icon_e_article_405.png" alt="menu_icon_e_article_405">
+        <h5>Статьи</h5>
+      </a>
+      <a href="http://petrova-alina.ru/tvoj-profil/" class="footer-mobile__buttons">
+        <img class="pointer__your-profile" src="img/01_main_mobile/pointer_1661.png" alt="pointer_1661.png">
+        <img src="img/01_main_mobile/menu_icon_k_avatar_760.png" alt="menu_icon_k_avatar_760">
+        <h5>Профиль</h5>
+      </a>
+
+    </footer>
+    <!-- /.footer-mobile -->
+
+  </div>
+  <!-- /.main-mobile -->
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

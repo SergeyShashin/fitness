@@ -1,0 +1,177 @@
+// courseIncludesAndInventory start
+.courseIncludesAndInventory
+  // width: $width1140
+  width: 100%
+  padding: 0 40px
+  display: flex
+  justify-content: space-between
+  .includes, .inventory
+    padding: 30px
+    // width: 520px
+    width: 49%
+    height: 300px
+    background-color: #f1e2cf
+    border: 1px solid #d2bea6
+    border-radius: 10px
+    color: #494450
+    &-title
+      margin-bottom: 10px
+      text-align: center
+      opacity: 0.5
+      font-family: $fontFamilyBebasNeue
+      font-size: 36px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.111em
+    &-list
+      font-family: $fontFamilyMontserratLight
+      list-style-type: disc
+      font-size: 18px
+      font-weight: 500
+      li
+        margin-bottom: 12px
+        color: #d2bea6
+      span
+        color: #494450
+
+  .inventory
+    position: relative
+    background: #d2bea6
+    margin-bottom: 40px
+    &__arrow-bck, &__arrow-frwd
+      position: absolute
+      width: 20px
+      height: 20px
+      opacity: 0.5
+      top: 51%
+      cursor: pointer
+    &__arrow-bck
+      left: 10px
+      transform: rotate(-45deg)
+      border-top: 4px solid #f1e2cf
+      border-left: 4px solid #f1e2cf
+    &__arrow-frwd
+      right: 10px
+      transform: rotate(135deg)
+      border-top: 4px solid #f1e2cf
+      border-left: 4px solid #f1e2cf
+
+    .inventory__items
+      margin-top: 40px
+      display: flex
+      justify-content: space-around
+      .inventory__item
+        height: 135px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        font-family: $fontFamilyMontserratBold
+        font-size: 18.1px
+        font-weight: 900
+        color: #494450
+        &_displayNone //ставить и убирать класс при клике в css
+          display: none
+
+
+@media (max-width: 1199px)
+  .courseIncludesAndInventory
+    flex-direction: column
+    align-items: center    
+    .includes, .inventory
+      width: 70%
+    .includes
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-evenly
+    .inventory
+      margin-top: 20px
+
+@media (max-width: 991px)
+  .courseIncludesAndInventory
+    .includes, .inventory
+      width: 90%
+
+@media (max-width: 768px)
+   .courseIncludesAndInventory
+    .includes, .inventory
+      width: 100%
+      height: 200px
+      padding: 10px
+      &-title
+        font-size: 20px
+      &-list
+        font-size: 14px
+
+    .inventory
+      &__arrow-bck, &__arrow-frwd
+        width: 15px
+        height: 15px    
+      .inventory__items
+        margin: 20px        
+        .inventory__item
+          height: 100px
+          font-size: 14px
+          img
+            width: 60px
+            height: 60px
+            
+@media (max-width: 576px)
+  .courseIncludesAndInventory
+    padding: 0 20px
+
+@media (max-width: 428px)
+  .courseIncludesAndInventory
+    width: 100%
+    padding: 0
+    flex-direction: column
+    .includes
+      padding: 30px
+      width: 100%
+      background-color: #f1e2cf
+      border-radius: 8px
+      margin-bottom: 3px
+    .includes
+      height: 237px
+      &-title
+        font-size: 22px
+      &-list
+        font-size: 14px
+    .inventory
+      padding: 25px 0
+      height: 182px
+      width: 100%
+      border-radius: 0
+      &__arrow-bck, &__arrow-frwd
+        width: 16px
+        height: 16px
+      &-title
+        font-size: 22px
+
+      .inventory__items
+        margin-top: 20px
+        .inventory__item
+          height: 80px
+          font-size: 14px
+        .inventory-img-mat
+          display: block
+          width: 56px
+        .inventory-img-chair
+          display: block
+          width: 39px
+        .inventory-img-dumbbells
+          display: block
+          width: 56px
+        .inventory-img-bottle
+          display: block
+          width: 33px
+        .inventory-img-rubber-band
+          display: block
+          width: 45px
+
+@media (max-width: 360px)
+  .courseIncludesAndInventory
+    width: 100%
+
+//courseIncludesAndInventory stop

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.13.0.custom/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="js/jquery-ui-1.13.0.custom/external/jquery/jquery.js"></script>
+  <script src="js/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+  <title>Об Алине</title>
+</head>
+
+<body>
+  <div class="front-page">
+    <div class="wrap_side-bar">
+      <div class="side-bar">
+        <div class="side-bar_full_default">
+          <div class="side-bar_header">
+            <a href="http://petrova-alina.ru">
+              <img class="header_button_menu"
+                src="img/header_button_menu.svg"
+                alt="header_button_menu">
+            </a>
+            <a href="http://petrova-alina.ru">
+              <img class="alina_petrova_logo"
+                src="img/alina_petrova_logo.svg" alt="Алина Петрова">
+            </a>
+          </div>
+          
+          <div class="side-bar_profile">
+            <div class="wrapAvaAndText">
+              <div class="ava_default"><img src="img/ava_default.svg"
+                  alt="ava_default"></div>
+              <span class="text_Input not_authorized">Вход</span>
+              <span class="authorized-user text_UserName displayNone">Stepanchik</span>
+            </div>
+            <button class="button_register not_authorized">Регистрация</button>
+            <span class="authorized-user button_exit displayNone">ВЫХОД</span>
+            <div class="wrap_sidebar_profile"></div>
+          <!-- /.wrap_sidebar_profile -->
+          </div>
+          <!-- /.side-bar_profile -->
+          <div class="list">
+            <a href="http://petrova-alina.ru/katalog">
+              <div class="catalog">
+                <img class="catalog_icon"
+                  src="img/menu_icon_a_catalog.svg" alt="КАТАЛОГ">
+                <img class="catalog_icon-hover displayNone"
+                  src="img/menu_icon_a_catalog_hover.svg" alt="КАТАЛОГ">
+                <div class="catalog_text">Каталог</div>
+              </div>
+            </a>
+            <!-- /.catalog -->
+            <a href="http://petrova-alina.ru/trenirovki">
+              <div class="exercise">
+                <img class="exercise_icon"
+                  src="img/menu_icon_b_exercise.svg" alt="ТРЕНИРОВКИ">
+                <img class="exercise_icon-hover displayNone"
+                  src="img/menu_icon_b_exercise_hover.svg" alt="ТРЕНИРОВКИ">
+                <div class="exercise_text">Тренировки</div>
+              </div>
+            </a>
+            <!-- /.exercise -->
+            <a href="http://petrova-alina.ru/chat">
+              <div class="chat">
+                <img class="chat_icon" src="img/menu_icon_f_chat.svg"
+                  alt="ЧАТ">
+                <img class="chat_icon-hover displayNone" src="img/menu_icon_f_chat_hover.svg"
+                  alt="ЧАТ">
+                <div class="chat_text">Чат</div>
+              </div>
+            </a>
+            <!-- /.chat -->
+            <a href="http://petrova-alina.ru/ob-aline">
+              <div class="about">
+                <img class="about_icon" src="img/menu_icon_j_about.svg"
+                  alt="ОБ АЛИНЕ">
+                <img class="about_icon-hover displayNone" src="img/menu_icon_j_about_hover.svg"
+                  alt="ОБ АЛИНЕ">
+                <div class="about_text">ОБ АЛИНЕ</div>
+              </div>
+            </a>
+            <!-- /.about -->
+            <a href="http://petrova-alina.ru/faq">
+              <div class="faq">
+                <img class="faq_icon" src="img/menu_icon_i_faq.svg"
+                  alt="FAQ">
+                <img class="faq_icon-hover displayNone" src="img/menu_icon_i_faq_hover.svg"
+                  alt="FAQ">
+                <div class="faq_text">FAQ</div>
+              </div>
+            </a>
+            <!-- /.faq -->
+            <a href="http://petrova-alina.ru/reviews">
+              <div class="review">
+                <img class="review_icon"
+                  src="img/menu_icon_h_review.svg" alt="ОТЗЫВЫ">
+                <img class="review_icon-hover displayNone"
+                  src="img/menu_icon_h_review_hover.svg" alt="ОТЗЫВЫ">
+                <div class="review_text">ОТЗЫВЫ</div>
+              </div>
+            </a>
+            <!-- /.review -->
+            <a href="http://petrova-alina.ru/pitanie" class="displayNone authorized-user">
+              <div class="nutrition">
+                <img class="nutrition_icon"
+                  src="img/menu_icon_c_nutrition.svg" alt="ПИТАНИЕ">
+                <img class="nutrition_icon-hover displayNone"
+                  src="img/menu_icon_c_nutrition_hover.svg" alt="ПИТАНИЕ">
+                <div class="nutrition_text">ПИТАНИЕ</div>
+              </div>
+            </a>
+            <!-- /.nutrition -->
+            <a href="http://petrova-alina.ru/dinamika" class="displayNone authorized-user">
+              <div class="progress">
+                <img class="progress_icon"
+                  src="img/menu_icon_d_progress.svg" alt="ДИНАМИКА">
+                <img class="progress_icon-hover displayNone"
+                  src="img/menu_icon_d_progress_hover.svg" alt="ДИНАМИКА">
+                <div class="progress_text">ДИНАМИКА</div>
+              </div>
+            </a>
+            <!-- /.progress -->
+            <a href="http://petrova-alina.ru/stati" class="displayNone authorized-user">
+              <div class="article">
+                <img class="article_icon"
+                  src="img/menu_icon_e_article.svg" alt="СТАТЬИ">
+                <img class="article_icon-hover displayNone"
+                  src="img/menu_icon_e_article_hover.svg" alt="СТАТЬИ">
+                <div class="article_text">СТАТЬИ</div>
+              </div>
+            </a>
+            <!-- /.article -->
+            <a href="http://petrova-alina.ru/konkursy" class="displayNone authorized-user">
+              <div class="contest">
+                <img class="contest_icon"
+                  src="img/menu_icon_g_contest.svg" alt="КОНКУРСЫ">
+                <img class="contest_icon-hover displayNone"
+                  src="img/menu_icon_g_contest_hover.svg" alt="КОНКУРСЫ">
+                <div class="contest_text">Конкурсы</div>
+              </div>
+            </a>
+            <!-- /.contest -->
+          </div>
+          <!-- /.list -->
+          <div class="side-bar_feedback">
+            <div class="feedback-text">
+              <span>Есть вопросы? Наша служба поддержки работает 24/7. Пиши!</span>
+              <img class="emoji_smile"
+                src="img/menu_feedback_emoji_smile.svg"
+                alt="Emoji_smile">
+            </div>
+            <!-- /.feadback-text -->
+            <button class="feedback-button">ЗАДАТЬ ВОПРОС</button>
+          </div>
+          <!-- /.side-bar_feadback -->
+          <div class="question displayNone">
+            <a class="question-button" href="#">
+              <img class="question__default" src="img/button_default_1285.png" alt="button_default_1285">
+              <img class="question__active displayNone" src="img/button_active_1280.png" alt="button_active_1280">
+            </a>
+          </div>
+        </div>
+        <!-- /.side-bar_full_default -->
+      </div>
+      <!-- /.side-bar -->
+    </div>
+    <!-- /.wrap_side bar -->
+
+    <div class="about-alina-page">
+      <div class="header__about-alina-page">
+        <h1>О ТРЕНЕРЕ</h1>
+      </div>
+      <!-- /.header__about-alina-page -->
+      <div class="body-sculptor__about-alina-page">
+        <div class="body-sculptor__text">
+          <h3 class="body-sculptor__h3">Скульптор твоего тела</h3>
+          <h2 class="body-sculptor__h2">Алина Петрова</h2>
+          <div class="body-sculptor__p">
+            <p>Салют, дружок!</p>
+            <p>Ромелу Лукаку официально вернулся в «Челси»: Роман Абрамович заплатил «Интеру» 115
+              лямов евро за бельгийского нападающего.
+            </p>
+            <p>
+              А это значит, что Лукаку забрался наверх топа футболистов с самой большой суммой
+              трансферов за карьеру — за все переходы Ромелу выложили более 327 миллионов
+            </p>
+          </div>
+          <!-- /.body-sculptor__p -->
+        </div>
+        <!-- /.body-sculptor__text -->
+        <img src="img/about-alina-page/alina_about_107_4602.png" alt="alina_about" class="img__body-sculptor">
+        <!-- /.img__body-sculptor -->
+      </div>
+      <!-- /.body-sculptor__about-alina-page -->
+      <div class="stats__about-alina-page">
+        <div class="stats__item">
+          <div class="stats__number">37</div>
+          <div class="stats__text">работающих программ для любого уровня подготовки</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">55000</div>
+          <div class="stats__text">общительных эмпатичных подписчиков</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">14</div>
+          <div class="stats__text">августа «Ротор» поглотит «Балтику» дома</div>
+        </div>
+      </div>
+      <!-- /.stats -->
+      <div class="education__about-alina-page">
+        <div class="education__text">
+          <h3 class="education__h3">Образование</h3>
+          <div class="education__p">
+            <p>
+              В июле Зарема начала войну с топ-менеджментом «Спартака» и с каждым сообщением добавляла жёсткости. В
+              какой-то момент она перешла на аудио, где были мощные цитаты.
+            </p>
+            <p>
+              Одно из объяснений: глубокое погружение в дела клуба захватывало на старте, но потом утомило, от тренеров
+              и трансферов перешли к обсуждению ответственных за продажу вип-мест. Зарема отправляла в среднем 23
+              сообщения в день, переварить весь этот поток оказалось не так просто.
+            </p>
+          </div>
+          <!-- /.education__p -->
+        </div>
+        <!-- /.education__text -->
+        <img src="img/about-alina-page/alina_about_241_4624.png" alt="alina_about" class="img__education">
+        <!-- /.img__education -->
+      </div>
+      <!-- /.education__about-alina-page -->
+
+      <div class="slogan__about-alina-page">
+        <img src="img/about-alina-page/quotemark_4633.png" alt="quotemark" class="img__quotemark_left">
+        <h2 class="slogan__text">Уже сутки прошли после поражения«Спартака» от «Бенфики»; кажется, в вылетевсе уже
+          обвинили друг друга</h2>
+        <img src="img/about-alina-page/quotemark_4639.png" alt="quotemark" class="img__quotemark_right">
+      </div>
+      <!-- /.slogan__about-alina-page -->
+
+      <div class="experience__about-alina-page">
+        <div class="experience__bg-text">
+          <div class="experience__text_passion">Моя страсть</div>
+          <div class="experience__text_fitness">ФИТНЕС</div>
+        </div>
+        <img src="img/about-alina-page/alina_about_293_4642.png" alt="alina_about" class="img__experience">
+        <div class="experience__text">
+          <h2 class="experience__text_header">ОПЫТ РАБОТЫ</h2>
+          <div class="experience__text_content">
+            <p>Похоже, самую адекватную реакцию на поражение выдал Руй Витория: «Касаемо молодых игроков — мы всё
+              понимаем. Чтобы играть хорошо, нам нужна революция в плане комплектования команды. Опыт игроков нам
+              необходим для роста.</p>
+            <p>Я доволен игроками, но мы все понимаем, что есть разница — играть в РПЛ и ЛЧ». Витория не скажет об этом
+              публично, но у «Спартака» есть слабые позиции даже по меркам РПЛ — причём проблемы тянутся на протяжении
+              нескольких сезонов.</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.experience__about-alina-page -->
+
+      <div class="slider slider__about-alina-page">
+        <div class="slider__img">
+          <div class="slider__frame">
+            <img src="img/about-alina-page/frame_05_a4_0__602556_4908.png" alt="frame_4908" class="img__frame">
+            <img src="img/about-alina-page/cert_churkaev_2019_4907.png" alt="cert_churkaev" class="img__current_img">
+          </div>
+          <div class="slider__frame slider__next-frame">
+            <img src="img/about-alina-page/frame_05_a4_0__602556_4915.png" alt="frame_4915" class="img__frame">
+            <img src="img/about-alina-page/cert_reformator_2019_4914.png" alt="cert_churkaev" class="img__next_img">
+          </div>
+        </div>
+        <div class="slider__control">
+          <img src="img/about-alina-page/arrow_bck_default_4940.png" alt="arrow_bck_default" class="img__arrow_left">
+          <div class="number-page">
+            <span id="current-page">1</span>
+            <span class="divider__pages">/</span>
+            <span id="total-pages">18</span>
+          </div>
+          <img src="img/about-alina-page/arrow_frwrd_active_4939.png" alt="arrow_frwrd_active" class="img__arrow_right">
+        </div>
+      </div>
+      <!-- /.slider -->
+
+      <div class="baner__about-alina-page">
+        <img src="img/about-alina-page/pic_4945.png" alt="pic_4945" class="img__about-alina-page">
+      </div>
+      <!-- /.baner__about-alina-page -->
+
+      <div class="why-i__about-alina-page">
+        <h2 class="why-i__header">ПОЧЕМУ Я</h2>
+        <div class="why-i__content">
+          <p>
+            От пива пузо растёт, хотя и от водки тоже. Когда её переберёшь, начинаешь есть всё без разбору. Иногда и
+            пива охота, иногда и водки нужно выпить. Здесь не отдаю предпочтения никакому напитку.
+          </p>
+          <p>
+            Фитцжеральд запросто мог отправить пик на помойку, выбрав своего младшего сына Брендана, но внезапно включил
+            голову.
+          </p>
+          <p>
+            Бардакова задрафтовали только с третьей попытки. Да, он по сути ролевик для нижних звеньев, но мы взяли
+            почти такого же игрока в первом раунде! Парадоксально, но проспект, выбранный «дьяволами» ниже всех,
+            запросто может доехать в НХЛ самым первым.
+          </p>
+        </div>
+        <!-- /.why-i__content -->
+      </div>
+      <!-- /.why-i__about-alina-page -->
+
+      <div class="slogan__about-alina-page">
+        <img src="img/about-alina-page/quotemark_4633.png" alt="quotemark" class="img__quotemark_left">
+        <h2 class="slogan__text">Потеря Нэйтана Бастиана привела к острой нехватке злого громилы в атаке</h2>
+        <img src="img/about-alina-page/quotemark_4639.png" alt="quotemark" class="img__quotemark_right">
+      </div>
+      <!-- /.slogan__about-alina-page -->
+
+      <div class="text__about-alina-page">
+        <p>После перерыва некоторым игрокам даже дорисовали фломастером недостающие цифры, только судья это не оценил. Благо, нашлась запасная форма. А Слуцкий после матча успел пошутить про экологический дождь в Польше, к которому форма была не готова.</p>
+        <p>Но оказалось, что это не всё. В ответном матче «Рубин» добил тему с легендарным проколом с помощью спонсоров: на протяжении всей игры на билбордах появляется аббревиатура букмекерской компании с нарисованными или отклеивающимися буквами — как было неделю назад в Польше.</p>
+      </div>
+      <!-- /.text__about-alina-page -->
+
+      <div class="foto__about-alina-page">
+        <div class="foto__left">
+          <img src="img/about-alina-page/pic_4960.png" alt="pic_4960">
+          <img src="img/about-alina-page/pic_4962.png" alt="pic_4962">
+        </div>
+        <div class="foto__right">
+          <img src="img/about-alina-page/pic_4961.png" alt="pic_4961">
+        </div>
+      </div>
+      <!-- /.foto__about-alina-page -->
+
+      <div class="text__about-alina-page">
+        <p>В РПЛ пошли навстречу Валерию Карпину и перенесли шестой тур чемпионата на 25–28 августа. Решение связано с матчами сборной России в квалификации ЧМ-2022.</p>
+        <p>Я очень благодарен клубам за то, что теперь у сборной будет два-три полноценных дня на подготовку. Понятно, что это не гарантия того, что мы всех обыграем, но перенос поможет нам выступить лучше — это факт.</p>
+        <p>Теперь понял?</p>
+      </div>
+      <!-- /.text__about-alina-page -->
+
+      <div class="button__about-alina-page">
+        <button class="button__select-course">Выбрать курс</button>
+      </div>
+      <!-- /.button__about-alina-page -->
+
+      <div class="signature__about-alina-page">
+        <img src="img/about-alina-page/autograph_4987.png" alt="autograph-alinas" class="img__signature">
+      </div>
+      <!-- /.signature__about-alina-page -->
+
+
+    </div>
+    <!-- /.about-alina-page -->
+  </div>
+  <!-- /.front-page -->
+
+  <div class="wrap-footer">
+    <div class="footer">
+      <span class="footer_copyright">© 2021–2026 Alina Petrova™</span>
+      <a href="#" class="footer_download_google_play"><img src="img/footer_download_google_play_white.svg"
+          alt="google_play"></a>
+      <a href="#" class="footer_download_app_store"><img src="img/footer_download_app_store_white.svg" alt=""></a>
+      <div class="footer_social_media">
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_ig_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_ig_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_vk_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_vk_active.svg" alt="social_media_active" class="displayNone social-media__active"></a>
+        </a>
+        <a class="a-social-media mt3" href="#">
+          <img src="img/01_main/footer_social_yt_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_yt_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_tg_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_tg_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+        <a class="a-social-media" href="#">
+          <img src="img/01_main/footer_social_fb_default.svg" alt="social_media_default" class="social-media__default">
+          <img src="img/01_main/footer_social_fb_active.svg" alt="social_media_active" class="displayNone social-media__active">
+        </a>      
+      </div>
+    </div>
+    <!-- /.footer -->
+  </div>
+  <!-- /.wrap-footer -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

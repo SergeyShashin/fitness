@@ -1,0 +1,353 @@
+/*side-bar start*/
+.side-bar  
+  width: 100%
+  height: 1020px  
+  background: $color_494450
+  color: $color_d2bea6
+  box-shadow: $boxShadow_sideBar
+
+/*
+  к переключению .authorized-user и .not_authorized 
+  нужно переключать в .list базовом высоту и маржин, в list max-width: 800px
+  и в list max-width: 640px высоту.
+  В main-mobile .authorized-user display: flex
+  */
+
+.authorized-user //включаем display: block, если пользователь авторизован
+  display: block
+
+.not_authorized  
+  // display: flex //если не авторизован
+  display: none //если авторизован
+  
+.catalog, .exercise, .chat, .about,
+.faq, .review, .nutrition, .progress,
+.article, .contest
+  display: flex
+  justify-content: flex-start
+  img
+    width: 30px
+    height: 30px
+
+.catalog:hover, .exercise:hover, .chat:hover, .about:hover,
+.faq:hover, .review:hover, .nutrition:hover, .progress:hover,
+.article:hover, .contest:hover
+  color: $color_615c69
+
+.side-bar_header
+  width: 100%
+  padding: 25px 40px
+  height: $height120
+  display: flex
+  justify-content: start
+  align-items: center  
+  .header_button_menu
+    margin-right: 60px 
+    // width: 30%
+    height: $height26
+  .alina_petrova_logo
+    width: 100%
+    height: $height70
+
+.side-bar_profile
+  position: relative   
+  height: $height110 
+  display: flex
+  justify-content: flex-end
+  align-items: center  
+  .wrapAvaAndText
+    position: absolute
+    left: 0
+    z-index: 1
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .ava_default
+    img
+      margin-left: $marginLeft_30 
+      margin-right: $marginRight_10 
+      width: $width60
+      height: $height60
+      opacity: $opacity_05
+      background-color: $color_7b7682
+      border-radius: 100%
+  .text_Input
+    +property_text($fontsize20, $lineHeight_1_2, $fontWeight_700, $letterSpacing_0_111, $color_d2bea6)
+    border-bottom: 1px dashed $color_d2bea6
+  .text_UserName
+    +property_text($fontsize20, $lineHeight_1_2, $fontWeight_700, $letterSpacing_0_111, $color_d2bea6)        
+  .button_register
+    justify-content: center
+    align-items: center
+    position: absolute
+    right: 30px
+    z-index: 1            
+    margin-right: $marginRight_20
+    width: $width200
+    height: $height50
+    background-color: $color_d2bea6
+    box-shadow: $boxShadow_buttonRegister
+    border-radius: $borderRadius_25
+    border: none
+    +property_text($fontsize20, $lineHeight_1_2, $fontWeight_700, $letterSpacing_0_111, $color_615c69)
+  .button_exit
+    margin-right: 40px   
+    border-bottom: 1px dashed $color_7b7682    
+    +property_text($fontsize20, $lineHeight_1_2, $fontWeight_700, $letterSpacing_0_111, $color_7b7682)
+  
+  .wrap_sidebar_profile
+    position: absolute
+    left: 0
+    height: $height110
+    width: 100%
+    height: 100%
+    opacity: $opacity_05
+    background: $color_615c69
+    
+.list
+  font-family: $fontFamilyBebasNeue
+  margin-left: $marginLeft_40
+  margin-right: 40px
+  height: $height560 //включаем если пользователь авторизован
+  // height: 360px // выключаем если пользователь не авторизован
+  // margin-bottom: 200px //выключаем если пользователь не авторизован
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly 
+  font-size: $fontsize26
+  text-transform: uppercase
+  font-weight: $fontWeight_700
+  letter-spacing: $letterSpacing_0_111
+  a
+    color: $color_d2bea6
+  img        
+    margin-right: $marginRight_25
+
+.side-bar_feedback
+  border-top: 1px solid $color_615c69 
+  .feedback-text
+    margin: 20px 40px 
+    font-family: $fontFamilyMontserratLight
+    font-size: $fontsize14    
+    font-weight: $fontWeight_500
+    color: $color_7b7682
+
+
+@media (max-width: 1400px)
+  .side-bar
+    .button_register    
+      right: 0
+      font-size: 18px
+      width: 45%
+
+@media (max-width: 1288px)
+  .side-bar
+    .button_register    
+      width: 40%
+
+@media (max-width: 1199px)
+  .side-bar
+    .button_register    
+      width: 38%
+    .button_exit
+      margin-right: 20px 
+
+@media (max-width: 991px)
+  .side-bar
+    .side-bar_header
+      height: 170px
+      flex-wrap: wrap
+      justify-content: center
+      padding: 0 40px
+      align-items: space-around
+      .header_button_menu
+        width: 100%
+        margin-top: 20px
+      .alina_petrova_logo
+        width: 100%
+        margin-left: 0
+        margin-bottom: 20px    
+    .side-bar_profile
+      // padding: 0px 40px
+      justify-content: flex-end
+      height: 170px
+      flex-direction: column
+      justify-self: center
+      .wrapAvaAndText        
+        top: 20px
+      .button_exit
+        margin-bottom: 40px     
+      
+      .button_register    
+        width: 50%
+        bottom: 20px
+        left: 40px   
+    .side-bar_feedback
+      display: none
+
+    .question
+      display: flex
+      justify-content: flex-start
+      align-items: flex-end
+      height: 120px
+      margin-top: 20px
+      padding-left: 40px
+      padding-bottom: 30px
+      border-top: 1px solid rgba(#615c69, 0.3)
+      .question-button
+        &:hover
+          .question__default
+            display: none
+          .question__active
+            display: block
+
+
+@media (max-width: 800px)
+  .side-bar    
+    height: 1340px
+    .side-bar_profile
+      height: 150px
+      .wrapAvaAndText
+        width: 100%
+        flex-direction: column
+        justify-content: center
+        .ava_default    
+          img
+            margin-left: 0px
+            margin-right: 0px
+        .text_Input
+          display: none
+      .button_register
+        width: 60%
+        left: 20%
+        bottom: 15px
+      .button_exit
+        margin: 0px
+        margin-bottom: 10px
+
+
+    .list
+      height: 890px //если авторизован
+      // height: 650px //если не авторизован
+      img
+        margin-top: 10px
+      .catalog, .exercise, .chat, .about,
+      .faq, .review, .nutrition, .progress,
+      .article, .contest
+        flex-direction: column
+        justify-content: space-evenly
+      .catalog_text, .exercise_text, .chat_text, .about_text,
+      .faq_text, .review_text, .nutrition_text, .progress_text,
+      .article_text, .contest_text
+        margin-top: 10px
+
+// @media (max-width: 768px)
+
+@media (max-width: 640px)
+  
+  .side-bar
+    height: 990px    
+    .side-bar_header
+      height: 110px  
+      .header_button_menu
+        margin-top: 0px
+        margin-right: 0px
+
+    .alina_petrova_logo, .text_Input,
+    .text_UserName, .button_exit, .button_register
+      display: none
+
+    .list
+      width: 100%
+      height: 560px //если авторизован
+      // height: 360px //если не авторизован
+      align-items: center
+      margin-left: 0px
+      margin-right: 0px   
+      img
+        margin: 0px      
+
+      .catalog
+        &:hover
+          .catalog_icon
+            display: none
+          .catalog_icon-hover
+            display: block
+      .exercise
+        &:hover
+          .exercise_icon
+            display: none
+          .exercise_icon-hover
+            display: block
+      .chat
+        &:hover
+          .chat_icon
+            display: none
+          .chat_icon-hover
+            display: block
+      .about
+        &:hover
+          .about_icon
+            display: none
+          .about_icon-hover
+            display: block
+      .faq
+        &:hover
+          .faq_icon
+            display: none
+          .faq_icon-hover
+            display: block
+      .review
+        &:hover
+          .review_icon
+            display: none
+          .review_icon-hover
+            display: block        
+      .nutrition
+        &:hover
+          .nutrition_icon
+            display: none
+          .nutrition_icon-hover
+            display: block
+      .progress
+        &:hover
+          .progress_icon
+            display: none
+          .progress_icon-hover
+            display: block
+      .article
+        &:hover
+          .article_icon
+            display: none
+          .article_icon-hover
+            display: block
+      .contest
+        &:hover
+          .contest_icon
+            display: none
+          .contest_icon-hover
+            display: block        
+
+    .catalog_text, .exercise_text, .chat_text, .about_text,
+    .faq_text, .review_text, .nutrition_text, .progress_text,
+    .article_text, .contest_text
+      display: none
+
+    .question
+      height: 170px
+      justify-content: center
+      align-items: flex-end
+      margin-top: 0px
+      padding-left: 0px
+      padding-bottom: 30px
+
+
+// @media (max-width: 576px)
+
+@media (max-width: 480px)
+  .side-bar
+    display: none  
+ 
+  
+/*side-bar end*/  
+  

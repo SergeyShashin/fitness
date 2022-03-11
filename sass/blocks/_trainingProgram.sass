@@ -1,0 +1,330 @@
+/*.trainingProgram start*/
+// Добавлять .open открытому блоку .wrap-day
+// Добавлять и убирать при клике .displayNone блоку .img__checkbox
+// Убирать или ставить displayNone блоку .accordion__content
+// Убирать или добавлять displayNone блоку .icon_lock, .icon_open .icon_close 
+// Убирать или добавлять .check__trainingProgram_none блоку check__trainingProgram
+//Добавлять, если выбрали выполнено check__trainingProgram_dark
+.trainingProgram
+  // width: $width1140
+  width: 100%
+  padding: 0 40px
+  .trainingProgram-accordion
+    .wrap-day
+      // max-height: 481px
+      position: relative
+      margin-bottom: 30px
+    .accordion__header
+      height: 50px
+      background-color: #494450
+      border-radius: 10px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      h3
+        margin-left: 40px
+        font-family: $fontFamilyMontserratBold
+        font-size: 15px
+        line-height: 20px
+        font-weight: 900
+        color: #f1e2cf
+      .checkAndStatusAndRollUp
+        display: flex
+        align-items: center
+        .check__trainingProgram
+          width: 200px
+          height: 100%
+          display: flex
+          align-items: center
+          &_none
+            display: none        
+          .trainingProgram__input
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            width: 40px
+            height: 40px
+            background-color: #494450
+            border: 1px solid #f1e2cf
+            border-radius: 5px
+            .input__trainingProgram
+              position: absolute
+              width: 40px
+              height: 40px
+              opacity: 0
+              cursor: pointer
+            .img__checkbox
+              width: 25px
+              height: 19px
+          label
+            font-family: $fontFamilyBebasNeue
+            margin-left: 10px
+            font-size: 24.9px
+            line-height: 1.2
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 0.111em
+            color: #f1e2cf
+        .icon_open
+          cursor: pointer
+          margin: 0 20px
+          opacity: 0.2
+        .icon_close
+          display: none
+          cursor: pointer
+          margin: 0 20px
+        .icon_lock
+          cursor: pointer
+          margin: 0 20px
+        .divider
+          width: 1px
+          height: 50px
+          opacity: 0.2
+          background-color: #f1e2cf
+        
+        .check__trainingProgram_dark
+          opacity: 0.2
+
+    .accordion__content
+      // width: 1060px
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      // flex-wrap: wrap
+      // margin: 0 auto
+      padding: 10px 30px 20px 30px
+      text-align: center
+      // height: 481px-50px
+      height: 500px
+      background-color: #f1e2cf
+      border: 1px solid #d2bea6
+      border-radius: 0 0 10px 10px
+      .content__bloks
+        display: flex
+        // flex-wrap: wrap
+        justify-content: space-around
+        align-items: space-evenly
+        // margin-top: 30px
+        font-family: $fontFamilyMontserratLight
+        .content__warmingUp,
+        .content__training,
+        .content__stretching
+          display: flex
+          flex-direction: column
+          align-items: space-evenly
+          // width: 300px
+          width: 31%
+          .iframe__training
+            width: 100%
+            // height: 168px
+            height: 50%
+            margin: 15px 0
+            border-radius: 6px
+          p
+            height: 30%
+            text-align: left
+            font-size: 13px
+            line-height: 20px
+            font-weight: 500
+            letter-spacing: -0.01em
+            color: #494450
+        .warmingUp__title,
+        .training__title,
+        .stretching__title
+          display: flex
+          justify-content: space-between
+          line-height: 28px
+          font-weight: 900
+          h4
+            font-size: 20px
+            color: #494450
+          span
+            display: block
+            font-size: 16px
+            color: #d2bea6        
+
+  .open[open]
+    .accordion__header
+      border-radius: 10px 10px 0 0
+      .icon_open
+        display: none
+      .icon_close
+        display: block            
+
+@media (max-width: 1199px)
+  .trainingProgram
+    .trainingProgram-accordion
+      .accordion__content
+        height: 950px
+        justify-content: space-between
+        .content__bloks
+          display: flex
+          flex-direction: column
+          height: 90%
+            // align-items: space-around
+          .content__warmingUp,
+          .content__training,
+          .content__stretching
+            width: 100%
+            // height: 32%
+            display: flex
+            justify-content: space-evenly
+            .iframe__training
+              margin: 0
+                // height: 40%
+
+
+// @media (max-width: 991px)
+
+@media (max-width: 768px)
+  .trainingProgram
+    .trainingProgram-accordion
+      .wrap-day
+      .accordion__header
+        h3
+          margin-left: 10px
+          font-size: 14px
+        .checkAndStatusAndRollUp
+          .check__trainingProgram
+            width: 180px
+            height: 100%
+            display: flex
+            align-items: center
+            &_none
+              display: none        
+            .trainingProgram__input
+              width: 30px
+              height: 30px
+              .input__trainingProgram
+                width: 30px
+                height: 30px
+              .img__checkbox
+                width: 25px
+                height: 19px
+            label
+              font-size: 20px
+          .icon_open, .icon_close, .icon_lock
+            margin: 0 10px
+            width: 20px
+          
+@media (max-width: 576px)
+  .trainingProgram
+    padding: 0 20px
+    .trainingProgram-accordion
+      .accordion__content
+        height: 1000px
+        padding: 15px
+        .content__bloks
+          display: flex
+          flex-direction: column
+          height: 90%
+          .content__warmingUp,
+          .content__training,
+          .content__stretching
+            height: 30%
+              
+
+
+
+@media (max-width: 480px)
+  .trainingProgram
+    width: 100%
+    padding: 0px
+    .trainingProgram-accordion
+    .wrap-day
+      max-height: 430px
+      margin-bottom: 30px
+      .accordion__header
+        border-radius: 0px        
+        h3
+          margin-left: 30px
+          font-size: 12px
+          line-height: 1.2
+        .checkAndStatusAndRollUp        
+          .check__trainingProgram          
+            .trainingProgram__input            
+              width: 36px
+              height: 36px
+              .input__trainingProgram
+                width: 36px
+                height: 36px
+              .img__checkbox
+                width: 22px
+                height: 17px
+            label
+              font-size: 20px
+          .divider
+            display: none
+          .icon_open,
+          .icon_close,
+          .icon_lock
+            width: 18px
+      .accordion__content
+        display: flex        
+        border-radius: 0px 0px 0px 0px
+        width: 1500px
+        .content__bloks
+          display: flex
+          flex-direction: row
+          justify-content: space-around
+          align-items: space-evenly
+          .content__warmingUp,
+          .content__training,
+          .content__stretching
+            display: flex
+            flex-direction: column
+            align-items: space-evenly
+            // width: 300px
+            // width: 31%
+            .iframe__training
+              // width: 300px
+              // width: 100%
+              // height: 168px
+              height: 50%
+              margin: 15px 0
+              border-radius: 6px
+
+
+    .open[open]
+      .accordion__header
+        border-radius: 0px 0px 0px 0px
+        .icon_open
+          display: none
+        .icon_close
+          display: block
+          
+
+
+@media (max-width: 360px)
+  .trainingProgram
+    width: 100%
+
+    .accordion__header
+      border-radius: 0px
+      h3
+        margin-left: 30px
+        font-size: 12px
+        line-height: 1.2
+  
+  .accordion__content
+    overflow-x: auto
+
+  .check__trainingProgram
+    width: 150px
+
+@media (max-width: 320px)
+  .accordion__content
+    overflow-x: auto
+
+  .accordion__header
+    h3
+      margin-right: 35px
+  
+ 
+  
+    
+
+/*.trainingProgram stop*/

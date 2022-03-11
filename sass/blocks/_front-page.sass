@@ -1,0 +1,34 @@
+/*front-page start*/
+body
+  background-color: $color_f1e2cf
+  font-family: $fontFamilyMontserratLight, sans-serif
+
+.front-page
+  height: 90%
+  background-color: $color_f1e2cf
+  font-family: $fontFamilyBebasNeue, normal
+  display: flex
+  justify-content: space-between
+
+  .wrap_side-bar
+    width: 30%
+    margin-bottom: 40px
+    
+  .wrap_tabs
+    padding-bottom: 40px
+    width: 70%
+    border-left: 1px solid $color_rgba21019016605
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: stretch  
+
+@media (max-width: 480px)
+  .front-page
+    display: none
+  .wrap_side-bar
+    display: none
+  .wrap_tabs
+    display: none
+
+/*front-page end*/

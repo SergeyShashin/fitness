@@ -1,0 +1,230 @@
+/*_main-mobile start*/
+@media (max-width: 480px)    
+  .main-mobile
+    position: relative
+    width: 100%
+
+    .authorized-user //если авторизован, то включить 
+      display: flex
+
+    /*sidebar-mobile start*/
+    .wrap__sidebar-mobile
+      // display: none // при клике переключать
+      position: absolute
+      z-index: 10
+      width: 100%
+      height: 100%
+      background: rgba(#000000, 0.8)
+      .sidebar-mobile        
+        width: 100%
+        background-color: #494450        
+        
+        &__header
+          padding: 0 30px
+          justify-content: space-between          
+          box-shadow: none
+        
+        &__list
+          margin-left: 30px
+          // justify-content: flex-start //выключаем, если пользователь авторизован
+          margin-top: 20px
+          margin-bottom: 30px
+          height: 415px //включаем если пользователь авторизован
+          // margin-bottom: 200px //выключаем если пользователь авторизован
+          font-size: 22px
+          line-height: 44px
+          .catalog, .exercise, .chat, .about,
+          .faq, .review, .nutrition, .progress,
+          .article, .contest
+            align-items: center
+          img 
+            display: block
+            width: 25px
+            height: 25px
+          // .authorized-user
+            // display: flex //display none если пользователь не авторизован
+        
+        &__aplications          
+          width: 100%
+          height: 138px
+          padding: 30px
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          border-top: 1px solid rgba(#615c69, 0.3)
+          border-bottom: 1px solid rgba(#615c69, 0.3)
+          p 
+            font-family: $fontFamilyMontserratLight
+            font-size: 12px
+            line-height: 18px
+            font-weight: 500
+            color: #7b7682
+          p, a 
+            display: block
+          .aplications
+            width: 100%
+            display: flex
+            justify-content: space-between
+            .google
+              width: 150px
+              margin-right: 20px
+            .app-store
+              width: 130px
+       
+        &__feedback
+          border: none
+          height: 148px
+          padding: 30px
+          display: flex
+          flex-direction: column
+          justify-content: space-between        
+          .feedback-text__mobile
+            margin: 0
+            font-size: 12px
+            line-height: 18px
+
+        &__social-network
+          padding: 30px
+          width: 100%
+          height: 80px
+          border-top: 1px solid rgba(#615c69, 0.3)
+          display: flex
+          justify-content: space-evenly
+          align-items: center
+          .a-social-media
+            height: 20px
+            margin-bottom: 5px
+            img 
+              width: 25px
+          .a-social-media:hover    
+            .social-media__default
+              display: none
+            .social-media__active
+              display: block          
+    /*sidebar-mobile stop*/
+
+
+    .header-mobile
+      display: flex
+      padding: 0 30px
+      height: 80px
+      justify-content: space-between
+      align-items: center
+      background: #494450
+      box-shadow: 4px 0px 10px 0px rgba(0,0,0,0.3)
+      &__button-back
+        display: block
+        width: 24px
+        height: 24px
+        cursor: pointer
+      &__logo
+      &__button-menu      
+        display: block
+        width: 24px
+        height: 22px
+        cursor: pointer
+
+    .choose-a-course-mobile
+      height: 510px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-evenly
+      h2
+        font-family: $fontFamilyBebasNeue
+        font-size: 22px
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.111em
+        color: #d2bea6
+      .tabs-course-a__mobile
+        position: relative
+        width: 300px
+        height: 80px        
+        .tabs-course-a-text__mobile
+          font-size: 20px
+          line-height: 22px
+      .tabs-course-a-clicked-mobile //добавлять класс при клике
+        box-shadow: none
+        border: none
+        background: #494450
+        .tabs-course-a-text-clicked
+          position: absolute
+          z-index: $zIndex3
+          color: $color_d2bea6
+        .tabs-course-a-img-clicked
+          position: absolute
+          z-index: $zIndex2
+          filter: brightness(205%) contrast(200%) hue-rotate(90deg)        
+
+
+    .choose-a-level-mobile
+      margin-top: 50px
+      margin-bottom: 25px
+      height: 510px
+      h2
+        text-align: center
+        font-family: $fontFamilyBebasNeue
+        font-size: 22px
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.111em
+        color: #d2bea6
+
+  .footer-mobile
+    width: 100%
+    display: flex
+    height: 70px
+    background-color: #494450
+    box-shadow: 0px -4px 10px 0px rgba(255,255,255,0.3)
+    font-family: $fontFamilyBebasNeue
+    font-size: 15px
+    line-height: 1.2
+    font-weight: 700
+    letter-spacing: 0.111em
+    a
+      color: #d2bea6
+    .footer-mobile__buttons
+      position: relative
+      display: flex
+      // width: 105px
+      width: 25%
+      flex-direction: column
+      align-items: center
+      justify-content: space-evenly
+      height: 100%
+      border: 1px solid rgba(#615c69, 0.3)
+      img
+        display: block
+        width: 24px
+        height: 24px
+      .pointer__trenirovki
+        position: absolute
+        width: 33px
+        height: 10px
+        top: -10px       
+      .pointer__your-profile
+        position: absolute
+        width: 33px
+        height: 10px
+        top: -10px       
+
+
+
+@media (max-width: 360px)
+  .main-mobile
+    width: 100%
+    
+@media (max-width: 320px)
+  .main-mobile
+    width: 100%
+
+
+@media (min-width: 481px)
+  .main-mobile, .footer-mobile, .wrap__sidebar-mobile
+    display: none
+  
+
+/*_main-mobile stop*/

@@ -1,0 +1,216 @@
+/*start faq*/
+.faq-page
+  width: 70%
+  border-left: 1px solid rgba(#d2bea6, 0.5)
+  font-family: $fontFamilyMontserratLight
+  font-size: $fontsize13
+  line-height: $lineHeight_20
+  font-weight: $fontWeight_500
+  color: $color_494450
+  padding-bottom: 80px
+  &__header
+    padding: $padding_50_40_30_40
+    font-family: $fontFamilyMontserratBlack
+    font-size: $fontsize44
+    line-height: $lineHeight_48
+    font-weight: $fontWeight_900
+    text-transform: uppercase
+    letter-spacing: $letterSpacing_0_05
+    color: $color_d2bea6
+    border-bottom: 1px solid rgba(#d2bea6, 0.5)
+  &__buttons
+    width: 100%
+    padding: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    border-bottom: 1px solid rgba(#d2bea6, 0.5)
+    .button__common-topics
+      position: relative
+      z-index: 2
+      width: 340px
+      height: 100px
+      background-color: #f1e2cf
+      box-shadow: 0px 6px 18px 0px #d2bea6
+      border-radius: 20px
+      border: none
+      cursor: pointer
+      .button__text
+        position: absolute
+        left: 0
+        right: 0
+        top: 37%
+        bottom: 0
+        font-family: $fontFamilyMontserratBold
+        font-size: 22px
+        font-weight: 900
+        text-transform: uppercase
+        letter-spacing: 0.05em
+        color: #494450
+      .pointer
+        display: none
+      .button__letter
+        position: absolute
+        left: 0
+        right: 0
+        z-index: 0
+        top: -15px
+        opacity: 0.4
+        font-family: $fontFamilyMontserratBold
+        font-size: 112px
+        font-weight: 900
+        letter-spacing: 0.05em
+        color: #d2bea6
+    .button__common-topics:hover
+      border: 1px solid rgba(73,68,80,0.09)
+      box-shadow: none
+    .button__common-topics:focus
+      position: relative      
+      background-color: #494450
+      box-shadow: none      
+      .button__text
+        color: #f1e2cf
+        font: $fontFamilyMontserratBlack
+      .pointer
+        position: absolute
+        display: block
+        bottom: -10px
+        left: 0
+        right: 0
+        margin: auto
+      .button__letter
+        color: #55505d
+        opacity: 1
+  &__question
+    width: 100%
+    padding: 40px    
+    min-height: 71px
+    border-bottom: 1px solid rgba(#d2bea6, 0.5)
+    &:last-child
+      border-bottom: none                
+    .details__question
+      list-style: none
+      .summary__question
+        display: flex
+        justify-content: space-between
+        font-family: $fontFamilyMontserratBold
+        font-size: 18px
+        line-height: 26px
+        font-weight: 900
+        color: #494450
+        h4
+          margin-right: 20px        
+        .img__open
+        .img__close
+          display: none
+      .summary__question_content
+        padding: 20px        
+        width: 100%
+        font-size: 13px
+        line-height: 20px
+        font-weight: 500
+        letter-spacing: -0.01em
+        a 
+          color: #494450
+          text-decoration: underline
+        .ul__question
+          li
+            list-style: disc inside             
+            color: $color_d2bea6          
+          span
+            color: #494450 
+    .details__question[open]
+      .img__open
+        display: none
+      .img__close
+        display: block
+
+@media (max-width: 1500px)
+  .faq-page
+    &__buttons
+      height: 340px
+      align-items: space-evenly
+
+@media (max-width: 1199px)
+  .faq-page
+    &__buttons
+      height: 450px
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+
+@media (max-width: 768px)
+  .faq-page
+    &__header
+      display: flex
+      h1
+        font-size: 25px
+    &__buttons
+      .button__common-topics
+        .button__text
+          font-size: 20px
+    &__question
+      .details__question
+        .summary__question
+          width: 100%          
+
+@media (max-width: 576px)
+  .faq-page
+    &__header
+      padding: 30px
+      display: flex
+      justify-content: center
+      h1
+        text-align: center
+        font-size: 24px
+    &__buttons
+      padding: 30px      
+      .button__common-topics
+        width: 100%
+        .button__text
+          font-size: 20px
+    &__question
+      padding: 30px
+
+@media (max-width: 480px)  
+  .faq-page
+    width: 100%
+    &__header
+      border-bottom: none
+    &__buttons
+      height: 120px
+      padding: 0 15px 15px 15px
+      .button__common-topics
+        z-index: 2
+        height: 80px
+        .button__letter
+          font-size: 88px
+          top: -10px
+        .button__text
+          font-size: 22px
+        .img_dropdown-dark
+          position: absolute
+          right: 20px
+
+
+  /* Если разрешение 480px и меньше,
+   и кликнули по #buttonCommonTopicsA.
+   Убрать displayNone у #faqMobileClickButtonCommonTopicsA,
+   buttonCommonTopicsB, buttonCommonTopicsC.
+   Добавить #faqPageButtons класс height300.
+   Добавить displayNone #pointerА, #pointerB,  #pointerC, #imgDropdownDark
+    */
+  .faq-mobile-click-buttonCommonTopicsA
+    background: rgba(#000000, 0.8)    
+    position: absolute
+    z-index: 1
+    top: 0
+    width: 100%
+    height: 2350px
+  
+  .height300
+   height: 300px
+  
+
+
+/*stop faq*/

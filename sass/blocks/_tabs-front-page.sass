@@ -1,0 +1,107 @@
+/*tabs-front-page start*/
+/*.tabs-course-a-clicked добавлять класс в html
+ при клике по одной из кнопок  "Выбери курс" */
+
+.text-tabs
+  font-family: $fontFamilyBebasNeue
+  text-transform: uppercase
+  margin: $margin_30_0    
+  +property_text($fontsize22, $lineHeight_1_2, $fontWeight_700, $letterSpacing_0_111, $color_d2bea6)  
+
+a, a:hover, a:active
+  text-decoration: none
+  border: none
+
+.tabs-course
+  width: $widthPersent100
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  align-items: space-evenly
+  &-a    
+    position: relative
+    display: flex
+    text-align: center
+    justify-content: center
+    align-items: center
+    width: $width250
+    height: $height100
+    margin: 0 10px
+    background-color: $color_f1e2cf
+    box-shadow: $boxShadow_06180_d2bea6
+    border-radius: $borderRadius_20
+    text-decoration: none
+    border: 1px solid rgba(73,68,80,0.09)
+    .tabs-course-a-text
+      position: absolute
+      padding: $padding40
+      z-index: $zIndex0
+      font-family: $fontFamilyMontserratAlternatesBlack
+      font-size: $fontsize22    
+      font-weight: $fontWeight_900
+      line-height: $lineHeight_24
+      text-transform: uppercase
+      letter-spacing: $letterSpacing_0_05
+      color: $color_494450
+      span
+        font-family: $fontFamilyMontserratBlack
+    .tabs-course-a-img
+      display: none      
+      position: absolute
+      right: $right5
+      z-index: $zIndex_-1 
+  &-a:hover
+    box-shadow: none
+    border: 1px solid rgba(73,68,80,0.09)
+    .tabs-course-a-img
+      display: block
+      z-index: $zIndex1
+  .tabs-course-a-clicked //добавлять класс при клике
+    box-shadow: none
+    .tabs-course-a-text-clicked
+      position: absolute
+      z-index: $zIndex3
+      color: $color_d2bea6     
+    .tabs-course-a-img-clicked
+      display: block
+      position: absolute
+      z-index: $zIndex2
+      filter: brightness(205%) contrast(200%) hue-rotate(90deg)
+
+    .background-clicked
+      position: absolute
+      width: $width250
+      height: $height100
+      border-radius: $borderRadius_20
+      z-index: $zIndex1
+      background: #494450
+
+.level
+  width: $widthPersent100
+  display: flex
+  flex-flow: wrap
+  justify-content: space-evenly
+  align-items: space-evenly
+
+@media (max-width: 1544px)
+  .tabs-course
+    height: 250px
+
+// @media (max-width: 1199px)
+  //ok
+
+// @media (max-width: 991px)
+
+@media (max-width: 772px)
+  .tabs-course
+    height: 500px
+  
+
+// @media (max-width: 768px)
+// @media (max-width: 576px)
+
+
+/*tabs-front-page stop*/
+  
+
+

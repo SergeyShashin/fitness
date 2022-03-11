@@ -1,0 +1,66 @@
+/*slider start*/
+.slider
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &__img
+    display: flex
+    justify-content: flex-end
+  &__frame
+    position: relative
+    .img__frame      
+    .img__current_img
+      position: absolute
+      bottom: 75px
+      left: 49px
+  &__next-frame
+    position: absolute
+    right: 0
+    pading-left: 70px
+    .img__next_img      
+      position: absolute
+      height: 290px
+      bottom: 75px
+      left: 50px
+  &__control
+    margin-top: 110px
+    width: 340px
+    display: flex
+    justify-content: space-between    
+    .number-page
+      width: 60px
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      #current-page
+        font-family: $fontFamilyBebasNeue
+        font-size: 48px
+        font-weight: 700
+        letter-spacing: 0.02em
+        color: #494450
+        margin-bottom: 5px
+      #total-pages, .divider__pages
+        font-family: $fontFamilyMontserratBold
+        font-size: 24px
+        font-weight: 900
+        color: #d2bea6
+    .img__arrow_left
+      cursor: pointer
+    .img__arrow_right
+      cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*slider stop*/

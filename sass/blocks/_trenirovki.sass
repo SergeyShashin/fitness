@@ -1,0 +1,243 @@
+//start ternirovki
+.trenirovki
+  width: 70%
+  border-left: 1px solid $color_rgbad2bea6
+  font-family: $fontFamilyMontserratLight
+  font-size: $fontsize13
+  line-height: $lineHeight_20
+  font-weight: $fontWeight_500
+  color: $color_494450
+  .header__trenirovki
+    padding: $padding_50_40_30_40
+    font-family: $fontFamilyMontserratBlack
+    font-size: $fontsize44
+    line-height: $lineHeight_48
+    font-weight: $fontWeight_900
+    text-transform: uppercase
+    letter-spacing: $letterSpacing_0_05
+    color: $color_d2bea6
+  .filters__trenirovki
+    height: 555px
+    background-color: rgba(210,190,166,0.0)
+    .details__filters
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%      
+      .summary__filters
+        padding: 0 40px
+        background-color: #e8d7c3
+        height: $height76
+        width: 100%
+        display: flex        
+        justify-content: space-between
+        align-items: center             
+        h3 
+          font-family: $fontFamilyBebasNeue
+          font-size: $fontsize22
+          line-height: $lineHeight_1_2
+          font-weight: $fontWeight_700
+          text-transform: uppercase
+          letter-spacing: $letterSpacing_0_111
+          color: #d2bea6
+        .img__dropdown_filters
+          display: block
+          width: 18px
+          height: 11px
+        .img__dropdown_filters_open
+          display: none
+    .details__filters[open]      
+      border: 1px solid #d2bea6  
+      .summary__filters
+        background-color: #d2bea6
+        h3 
+          color: #f1e2cf
+        .img__dropdown_filters
+          display: none
+        .img__dropdown_filters_open
+          display: block
+      .summary__filters_content        
+        background-color: #f1e2cf
+        list-style: none
+        .checks__filters,
+        .checks__workouts
+          padding: 0 40px
+          display: flex
+          justify-content: space-between
+          height: 170px
+          width: 100%
+          font-family: $fontFamilyMontserratBold
+          font-size: 16px
+          line-height: 1.2
+          font-weight: 900
+          letter-spacing: 0.01em
+          color: #494450
+          border-bottom: 1px solid rgba(#d2bea6, 0.5)
+          .wrap
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+          .show-available-workouts,
+          .show-overdue-workouts,
+          .show-completed-workouts,
+          .show-not-started-workouts,
+          .checkbox-beautiful-buttocks,
+          .checkbox-slimming,
+          .checkbox-relief-press,
+          .checkbox-healthy-back
+            display: flex
+            align-items: center
+            .input__checkbox_custom            
+              position: relative            
+              min-width: 50px
+              min-height: 50px
+              background-color: #494450
+              border-radius: 10px              
+              img //displayNone переключать
+                position: absolute
+                width: 20px 
+                top: 17px
+                left: 15px
+              .input__filters
+                opacity: 0
+                width: 100%
+                height: 100%
+                background-color: #494450
+                border-radius: 10px            
+            label
+              margin: 0 10px
+              span 
+                color: #d2bea6
+            .no__label // ставить в html и убирать
+              color: #d2bea6
+
+            .inactive //ставить в html и убирать
+              background-color: #e8d7c3
+              &__label //ставить в html и убирать
+                color: #e8d7c3
+        .checks__workouts
+          border-bottom: none 
+  .buttons__filters
+    border-top: 1px solid rgba(#d2bea6, 0.5)
+    padding: 0 40px
+    height: 140px
+    display: flex
+    align-items: center
+
+@media (max-width: 768px)
+  .trenirovki
+    .header__trenirovki
+      font-size: 34px
+    .filters__trenirovki
+      height: 800px        
+      .details__filters[open]
+        .summary__filters_content
+          .checks__filters,
+          .checks__workouts
+            // padding: 0 40px
+            // display: flex
+            // justify-content: space-between
+            height: 300px
+            width: 100%
+            // font-size: 16px
+            flex-direction: column
+            .wrap
+              width: 100%
+              height: 160px
+              // display: flex
+              // flex-direction: column
+              // justify-content: space-around
+
+@media (max-width: 576px)
+  .trenirovki
+    .header__trenirovki
+      font-size: 24px
+
+@media (max-width: 480px)
+  .trenirovki
+    width: 100%
+    border-left: none
+    line-height: 0px
+    .header__trenirovki
+      width: 100%
+      padding: 0px
+      height: 70px
+      font-size: 24px
+      line-height: 0px
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      font-weight: 300
+      h1 
+        font-size: 24px
+
+    .filters__trenirovki
+      width: 100%
+      height: 760px   
+      .details__filters        
+        .summary__filters
+          padding: 0 30px
+          height: 56px          
+          h3
+          .img__dropdown_filters
+
+      .details__filters[open]
+        .summary__filters
+          h3 
+          .img__dropdown_filters
+          .img__dropdown_filters_open
+        .summary__filters_content
+          .checks__filters,
+          .checks__workouts
+            padding: 10px 30px
+            display: flex
+            flex-direction: column
+            align-items: space-between
+            justify-content: space-around
+            height: 260px
+            width: 100%
+            font-size: 14px
+            line-height: 20px
+            .wrap
+              width: 100%
+              justify-content: space-around
+              height: 150px
+
+            .show-available-workouts,
+            .show-overdue-workouts,
+            .show-completed-workouts,
+            .show-not-started-workouts,
+            .checkbox-beautiful-buttocks,
+            .checkbox-slimming,
+            .checkbox-relief-press,
+            .checkbox-healthy-back
+              display: flex
+              align-items: center
+              width: 100%
+              .input__checkbox_custom            
+                position: relative            
+                width: 50px
+                height: 50px
+                img //displayNone переключать
+                  position: absolute
+                  width: 19px 
+                  top: 17px
+                  left: 16px
+                .input__filters
+                  opacity: 0
+                  width: 50px
+                  height: 50px
+    .buttons__filters
+      border-top: 1px solid rgba(#d2bea6, 0.5)
+      padding: 0px 0px
+      height: 180px
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      align-items: center
+
+
+
+//stop trenirovki

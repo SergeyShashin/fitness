@@ -1,0 +1,400 @@
+/*level start */
+
+
+.level
+  margin-bottom: $marginBottom_40
+  &-wrap-card
+    position: relative
+    width: $width340
+    box-shadow: 0px 6px 18px 0px #d2bea6
+    height: 390px
+    border-radius: 20px
+    margin: 0 10px 30px 10px
+    &:hover
+      box-shadow: none      
+  &-card1, &-card2, &-card3,
+  &-card4, &-card5, &-card6       
+    position: absolute
+    z-index: $zIndex1   
+    width: $widthPersent100
+    height: $height390
+    border: 1px solid $color_rgba736880009
+    border-radius: $borderRadius_20
+    background-color: $color_f1e2cf    
+    .card1-header, .card2-header, .card3-header,
+    .card4-header, .card5-header, .card6-header
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center      
+      width: $widthPersent100
+      height: $height76
+      background-color: $color_d2bea6
+      border-radius: $borderRadius_20_20_0_0
+      &-text
+        margin-bottom: $marginBottom_5      
+        font-family: $fontFamilyMontserratBlack
+        font-size: $fontsize22
+        line-height: $lineHeight_24
+        font-weight: $fontWeight_900
+        text-transform: uppercase
+        letter-spacing: $letterSpacing_0_05
+        color: $color_494450
+        span
+          font-family: $fontFamilyMontserratAlternatesBlack
+      &-qualification
+        display: flex
+        justify-content: space-around
+        width: $width100
+        .card1-header-qualification1,
+        .card1-header-qualification2,
+        .card1-header-qualification3,
+        .card2-header-qualification1,
+        .card2-header-qualification2,
+        .card2-header-qualification3,
+        .card3-header-qualification1,
+        .card3-header-qualification2,
+        .card3-header-qualification3,
+        .card4-header-qualification1,
+        .card4-header-qualification2,
+        .card4-header-qualification3,
+        .card5-header-qualification1,
+        .card5-header-qualification2,
+        .card5-header-qualification3,
+        .card6-header-qualification1,
+        .card6-header-qualification2,
+        .card6-header-qualification3,
+          width: $width24
+          height: $height10
+          background: $background_rgba24122620700
+          border: 1px solid $color_eee0cd
+        .card1-header-qualification1
+          &-half1
+            width: $width12
+            height: $height8
+            background: $color_f1e2cf
+        .card2-header-qualification1,
+        .card3-header-qualification1,
+        .card4-header-qualification1,
+        .card5-header-qualification1,
+        .card6-header-qualification1,       
+        .card4-header-qualification2,
+        .card5-header-qualification2,
+        .card6-header-qualification2,
+        .card6-header-qualification3,
+          background: $color_f1e2cf
+        .card3-header-qualification2,
+        .card5-header-qualification3,
+          &-half2
+            width: $width12
+            height: $height8
+            background: $color_f1e2cf
+    .card1-body,
+    .card2-body,
+    .card3-body,
+    .card4-body,
+    .card5-body,
+    .card6-body
+      height: $height250
+      text-align: center
+      .card1-body-img-hover,
+      .card2-body-img-hover,
+      .card3-body-img-hover,
+      .card4-body-img-hover,
+      .card5-body-img-hover,
+      .card6-body-img-hover,
+        display: none
+      .button_default_more-details
+        img
+          margin-top: $marginTop_-20
+      .button_default_buy_2944
+        display: none
+      
+  &-card1:hover,    
+  &-card2:hover,    
+  &-card3:hover,    
+  &-card4:hover,    
+  &-card5:hover,    
+  &-card6:hover,    
+    z-index: $zIndex2    
+    height: $height500
+    .card1-body,      
+    .card2-body,      
+    .card3-body
+
+    .card1-body-img-default,
+    .card2-body-img-default,
+    .card3-body-img-default,
+    .card4-body-img-default,
+    .card5-body-img-default,
+    .card6-body-img-default,
+      display: none
+    .card1-body-img-hover,      
+    .card2-body-img-hover,      
+    .card3-body-img-hover,      
+    .card4-body-img-hover,      
+    .card5-body-img-hover,      
+    .card6-body-img-hover,      
+      display: inline-block
+    .button_default_buy_2944
+      margin-top: $marginLeft_10
+      display: inline-block
+
+// @media (max-width: 1366px)
+  
+
+@media (max-width: 480px)    
+  .level
+    position: relative
+    margin-bottom: 0
+    display: flex
+    justify-content: flex-start
+    // flex-wrap: nowrap
+    // overflow-x: auto
+    .pacifier-mobile-right
+      position: absolute      
+      right: 0
+      top: 25px
+      width: 30px           
+      &__header
+        height: 71px
+        background-color: $color_d2bea6
+        border-radius: 20px 0 0 0
+      &__body
+        position: relative
+        height: 379px
+        background-color: #f1e2cf
+        box-shadow: 0px 6px 18px 0px #d2bea6
+        border-radius: 0 0 0 20px
+        &:hover
+          box-shadow: none
+          border-left: 1px solid rgba(73,68,80, 0.09) 
+      &__btn1
+        position: absolute
+        bottom: 100px
+        right: 0        
+      &__btn2
+        position: absolute
+        bottom: 30px
+        right: 0
+    .pacifier-mobile-left
+      position: absolute
+      left: 0
+      transform: scale(-1, 1)
+      &__body
+       &:hover
+          box-shadow: none
+          border-left: 1px solid rgba(73,68,80, 0.09) 
+      
+
+    &-wrap-card
+      margin-top: 25px
+      margin-bottom: 25px
+      margin-left: 70px //50px, если листание влево
+      position: relative
+      height: 350px
+      width: 280px
+      &:hover
+        box-shadow: none      
+        
+    &-card1, &-card2, &-card3,
+    &-card4, &-card5, &-card6       
+      position: absolute
+      z-index: $zIndex1   
+      width: $widthPersent100
+      height: 450px
+      border-radius: $borderRadius_20
+      background-color: $color_f1e2cf
+      box-shadow: 0px 6px 18px 0px #d2bea6
+      .card1-header, .card2-header, .card3-header,
+      .card4-header, .card5-header, .card6-header
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center      
+        width: $widthPersent100
+        height: 71px
+        background-color: $color_d2bea6
+        border-radius: $borderRadius_20_20_0_0
+        &-text
+          margin-bottom: $marginBottom_5      
+          font-family: $fontFamilyMontserratBlack
+          font-size: 20px
+          line-height: 22px
+          font-weight: $fontWeight_900
+          text-transform: uppercase
+          letter-spacing: $letterSpacing_0_05
+          color: $color_494450
+          span
+            font-family: $fontFamilyMontserratAlternatesBlack
+        &-qualification
+          display: flex
+          justify-content: space-around
+          width: $width100
+          .card1-header-qualification1,
+          .card1-header-qualification2,
+          .card1-header-qualification3,
+          .card2-header-qualification1,
+          .card2-header-qualification2,
+          .card2-header-qualification3,
+          .card3-header-qualification1,
+          .card3-header-qualification2,
+          .card3-header-qualification3,
+          .card4-header-qualification1,
+          .card4-header-qualification2,
+          .card4-header-qualification3,
+          .card5-header-qualification1,
+          .card5-header-qualification2,
+          .card5-header-qualification3,
+          .card6-header-qualification1,
+          .card6-header-qualification2,
+          .card6-header-qualification3
+            width: $width24
+            height: $height10
+            background: $background_rgba24122620700
+            border: 1px solid $color_eee0cd
+          .card1-header-qualification1
+            &-half1
+              width: $width12
+              height: $height8
+              background: $color_f1e2cf
+          .card2-header-qualification1,
+          .card3-header-qualification1,
+          .card4-header-qualification1,
+          .card5-header-qualification1,
+          .card6-header-qualification1,       
+          .card4-header-qualification2,
+          .card5-header-qualification2,
+          .card6-header-qualification2,
+          .card6-header-qualification3,
+            background: $color_f1e2cf
+          .card3-header-qualification2,
+          .card5-header-qualification3,
+          &-half2
+            width: $width12
+            height: $height8
+            background: $color_f1e2cf
+      .card1-body,
+      .card2-body,
+      .card3-body,
+      .card4-body,
+      .card5-body,
+      .card6-body
+        height: 379px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .card1-body-img-hover,
+        .card2-body-img-hover,
+        .card3-body-img-hover,
+        .card4-body-img-hover,
+        .card5-body-img-hover,
+        .card6-body-img-hover,
+          position: absolute
+        .button_default_more-details
+          position: absolute
+          bottom: 90px
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 240px
+          height: 60px
+          background-color: #f1e2cf
+          border: 2px solid #d2bea6
+          border-radius: 30px
+          font-family: $fontFamilyBebasNeue
+          font-size: 26px
+          line-height: 1.2
+          font-weight: 700
+          text-transform: uppercase
+          letter-spacing: 0.111em
+          color: #d2bea6          
+        .button_default_buy_2944
+          position: absolute
+          bottom: 20px
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 240px
+          height: 60px
+          background-color: #494450
+          border-radius: 30px
+          font-family: $fontFamilyBebasNeue
+          font-size: 26px
+          line-height: 1.2
+          font-weight: 700
+          text-transform: uppercase
+          letter-spacing: 0.111em
+          color: #d2bea6
+
+        
+    &-card1:hover,    
+    &-card2:hover,    
+    &-card3:hover,    
+    &-card4:hover,    
+    &-card5:hover,    
+    &-card6:hover    
+      z-index: $zIndex2
+      height: 450px
+      box-shadow: none    
+      .card1-body,      
+      .card2-body,      
+      .card3-body
+
+      .card1-body-img-default,
+      .card2-body-img-default,
+      .card3-body-img-default,
+      .card4-body-img-default,
+      .card5-body-img-default,
+      .card6-body-img-default,
+        z-index: -1
+      .card1-body-img-hover,      
+      .card2-body-img-hover,      
+      .card3-body-img-hover,      
+      .card4-body-img-hover,      
+      .card5-body-img-hover,      
+      .card6-body-img-hover,      
+        z-index: 0
+  
+/*level stop */
+
+@media (max-width: 390px)
+  .level-wrap-card
+    margin-left: 40px //50px, если листание влево
+    margin-bottom: 25px
+    &:hover
+      box-shadow: none
+
+  .pacifier-mobile-left
+    display: none
+
+@media (max-width: 384px)
+  .level-wrap-card
+    margin-left: 30px //50px, если листание влево
+    margin-bottom: 25px
+    &:hover
+      box-shadow: none
+
+  .pacifier-mobile-left
+    display: none
+
+@media (max-width: 360px)
+  .level-wrap-card
+    margin-left: 30px //50px, если листание влево
+    margin-bottom: 25px
+    &:hover
+      box-shadow: none
+
+  .pacifier-mobile-left
+    display: none
+
+@media (max-width: 320px)
+  .level-wrap-card
+    margin-left: 20px
+    margin-bottom: 25px
+    text-align: center
+    &:hover
+      box-shadow: none
+
+  .pacifier-mobile-right
+    display: none

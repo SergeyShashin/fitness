@@ -1,0 +1,502 @@
+//interface start
+.feedback-button
+  margin-left: $marginLeft_30
+  width: $width240
+  height: $height50
+  color: $color_615c69
+  background-color: $color_494450
+  border: 1px solid $color_615c69
+  border-radius: $borderRadius_25
+  font-family: $fontFamilyBebasNeue, normal
+  $font-size: $fontsize20
+  letter-spacing: $letterSpacing_0_111
+  font-weight: $fontWeight_700
+  cursor: pointer
+  &__mobile
+    margin: 0
+    width: 180px
+    height: 40px
+    font-size: 18px
+    line-height: 1.2
+    font-weight: 700
+    letter-spacing: 0.111em
+    color: #7b7682
+    border-radius: 20px
+
+.button-full-programm
+  width: $width260
+  height: $height50
+  border: 1px solid $color_494450
+  border-radius: $borderRadius_25
+  font-family: $fontFamilyBebasNeue
+  font-size: $fontsize22
+  line-height: $lineHeight_1_2
+  font-weight: $fontWeight_700
+  text-transform: uppercase
+  letter-spacing: $letterSpacing_0_111
+  color: $color_494450
+  background-color: $color_f1e2cf
+  cursor: pointer
+  &__content
+
+.button__select-all, .button__select-course
+  width: 250px
+  height: 60px
+  background-color: #494450
+  box-shadow: 0px 4px 16px 0px #3a2b4f
+  border-radius: 30px
+  border: none
+  font-family: $fontFamilyBebasNeue
+  font-size: 22px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.111em
+  color: #d2bea6
+  &:hover
+    color: #f1e2cf
+    box-shadow: none
+    cursor: pointer
+
+.button__remove-all-tasks
+  width: 250px
+  height: 60px
+  background-color: #f1e2cf
+  border: 1px solid #d2bea6
+  border-radius: 30px
+  font-family: $fontFamilyBebasNeue
+  font-size: 22px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.111em
+  color: #d2bea6
+  &:hover
+    background: #494450
+    border: none
+    color: #f1e2cf
+    cursor: pointer
+  &_ml
+    margin-left: 20px
+
+.button-change-paspword, .button-save-all
+  width: $width250
+  height: $height60
+  background-color: $color_494450
+  box-shadow: $boxShadow_button-change-paspword
+  border-radius: $borderRadius_30
+  font-family: $fontFamilyBebasNeue
+  font-size: $fontsize22
+  line-height: $lineHeight_1_2
+  font-weight: $fontWeight_700
+  text-transform: uppercase
+  letter-spacing: $letterSpacing_0_111
+  color: $color_d2bea6
+  border: none
+  cursor: pointer
+
+.button-return-as-atwas
+  width: $width250
+  height: $height60
+  background-color: $color_f1e2cf
+  border: 1px solid $color_d2bea6
+  border-radius: $borderRadius_30
+  font-family: $fontFamilyBebasNeue
+  font-size: $fontsize22
+  line-height: $lineHeight_1_2
+  font-weight: $fontWeight_700
+  text-transform: uppercase
+  letter-spacing: $letterSpacing_0_111
+  color: $color_d2bea6
+  cursor: pointer
+  &_your-profile_buttons
+    margin-left: $marginLeft_20
+
+.button
+  position: relative
+  width: $width520/3
+  height: $height50
+  display: block
+  background-color: $color_f1e2cf
+  border: 1px solid $color_d2bea6
+  // font-family: $fontFamilyMontserratBlack
+  font-family: $fontFamilyMontserratBold
+  font-size: $fontsize16
+  line-height: $lineHeight_1_2
+  font-weight: $fontWeight_900
+  letter-spacing: $letterSpacing_0_01
+  color: $color_d2bea6
+  cursor: pointer
+  &__brl10
+    border-radius: $borderRadius_10_0_0_10
+  &__brr10
+    border-radius: $borderRadius_0_10_10_0
+  &:focus
+    border: 1px solid $color_494450
+    color: $color_494450
+
+  &__height
+    width: 70px
+    border: none
+    background-color: $color_e8d7c3
+    color: $color_d2bea6
+    font-size: $fontsize30
+    &:focus
+      border: none
+  &:hover
+    background-color: #f1e2cf
+    box-shadow: 0px 4px 20px 0px #d2bea6
+
+.button__load-foto-files-close
+  color: #d2bea6
+  background: none
+  border: none
+  cursor: pointer
+
+.button__close_reviews-create
+  position: absolute
+  width: 21px
+  height: 21px
+  right: 40px
+  background: none
+  border: none
+  cursor: pointer
+
+.button__start, .button__repeat
+  width: 100%
+  height: 60px
+  background-color: #f1e2cf
+  border: 1px solid #d2bea6
+  border-radius: 30px
+  font-family: $fontFamilyBebasNeue
+  font-size: 22px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.111em
+  color: #d2bea6
+  cursor: pointer
+
+.button__prolong
+  width: 100%
+  height: 70px
+  background-color: #494450
+  box-shadow: 0px 4px 16px 0px #3a2b4f
+  border-radius: 35px
+  border: none
+  font-family: $fontFamilyBebasNeue
+  font-size: 30px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.111em
+  color: #d2bea6
+  cursor: pointer
+
+.button__continue
+  width: 100%
+  height: 60px
+  background-color: #494450
+  border-radius: 30px
+  border: none
+  font-family: $fontFamilyBebasNeue
+  font-size: 22px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.111em
+  color: #f1e2cf
+  cursor: pointer
+
+.button__close_password-reset-page
+  position: absolute
+  width: 20px
+  height: 20px
+  background: none
+  border: none
+  right: 60px
+  top: 40px
+  cursor: pointer
+
+.button__reset
+  width: 280px
+  height: 60px
+  background-color: #494450
+  box-shadow: 0px 4px 16px 0px #3a2b4f
+  border-radius: 30px
+  font-family: $fontFamilyBebasNeue
+  font-size: 22px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.111em
+  color: #d2bea6
+  border: none
+  &_password-reset-page
+    margin: 30px 0
+.button__reset:hover
+  cursor: pointer
+  box-shadow: none
+  color: #f1e2cf
+.button__reset_inactive
+  background-color: #e8d7c3
+  box-shadow: none
+  color: #d2bea6
+  &:hover
+    color: #d2bea6
+    cursor: auto
+
+.button__reviews_send
+  margin-top: 25px
+  width: 280px
+  height: 60px
+  background-color: #e8d7c3
+  border-radius: 30px
+  box-shadow: 0px 4px 16px 0px #3a2b4f
+  font-family: $fontFamilyBebasNeue
+  font-size: 22px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.111em
+  color: #d2bea6
+  border: none
+  cursor: pointer
+
+.button__subscribe
+  width: 200px
+  height: 60px
+  background-color: #494450
+  box-shadow: 0px 4px 16px 0px #3a2b4f
+  border-radius: 30px
+  border: none
+  cursor: pointer
+  font-family: $fontFamilyBebasNeue
+  font-size: 22.1px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.111em
+  color: #d2bea6
+  position: absolute
+  right: -12px
+  bottom: -3px
+
+.input
+  &_login, &_mail, &_phone, &_social-network,
+  &_pasword, &_new-pasword, &__create-header, &__create-email, &__create-name,
+  &__subscribe-email
+    display: block
+    width: $width520
+    // width: 100%
+    height: $height50
+    font-family: $fontFamilyMontserratBold
+    background-color: $color_e8d7c3
+    border-radius: $borderRadius_10
+    border: none
+    font-size: $fontsize16
+    line-height: $lineHeight_1_2
+    font-weight: $fontWeight_900
+    letter-spacing: $letterSpacing_0_01
+    color: $color_d2bea6
+    padding: 0 10px
+    &:focus
+      color: $color_494450
+    &:hover
+      background-color: #f1e2cf
+      box-shadow: 0px 4px 20px 0px #d2bea6
+      cursor: pointer
+  &_login_height
+    width: 110px
+    text-align: center
+    border-left: 2px solid $color_f1e2cf
+    border-right: 2px solid $color_f1e2cf
+    border-radius: 0
+  &_login_birthday
+    min-width: 70px
+    text-align: center
+    border-left: 2px solid $color_f1e2cf
+    border-radius: 0
+  &_login_year
+    width: 110px
+    border-left: 2px solid #f1e2cf
+  &_social-network
+    width: 310px
+    border-left: 2px solid #f1e2cf
+    padding-left: 20px
+    padding-right: 20px
+    // width: 75%
+    border-radius: $borderRadius_0_10_10_0
+  &_pasword
+    background-color: $color_f1e2cf
+    box-shadow: $boxShadow_input_pasword
+    padding-right: 50px
+  &_error
+    border: 2px solid #ec274c
+    box-shadow: none
+  &_new-pasword
+    padding-right: 50px
+
+.displayNone
+  display: none
+
+.mt3
+  margin-top: 3px
+
+.df
+  display: flex
+
+.tac
+  text-align: center
+
+.brl10
+  border-radius: $borderRadius_10_0_0_10
+.brr10
+  border-radius: $borderRadius_0_10_10_0
+
+.bt
+  border-top: 1px solid #d2bea6
+
+/* классы для эффекта появления элементов каталога Старт */
+.chooseCourseUntil, .chooseLevelUntil
+  transform: translateY(30px)
+  opacity: 0
+
+.courseBeautifulButtocksUntil, .courseSlimmingUntil,
+.courseReliefPressUntil, .courseHealthyBackUntil,
+.nonproUntil, .prof1Until, .prof2Until, .prof3Until,
+.prof4Until, .prof5Until
+  transform: translateY(50px)
+  opacity: 0
+
+// .tabs-course-a-img
+//   display: none  
+
+.transition
+  &_0
+    transition: all 0.5s 0.25s
+  &_1
+    transition: all 1s 0.5s
+  &_2
+    transition: all 1s 1s
+  &_3
+    transition: all 1s 1.5s
+  &_4
+    transition: all 1s 2s
+  &_5
+    transition: all 1s 2.5s
+  &_6
+    transition: all 1s 3s
+
+/* классы для эффекта появления элементов каталога Стоп */
+
+@media (max-width: 991px)
+  .input
+    &_mail, &_phone,
+    &_pasword, &_new-pasword
+      width: 100%
+    &_social-network
+      width: 60%
+
+@media (max-width: 768px)
+  .input
+    &_login, &_mail, &_phone, &_social-network,
+    &_pasword, &_new-pasword, &__create-header, &__create-email, &__create-name,
+    &__subscribe-email
+      font-size: 14px
+    &_social-network
+      border-radius: 10px
+      width: 100%
+
+  .button
+    font-size: 14px
+    &__height
+      font-size: 30px
+
+  .button-return-as-atwas_your-profile_buttons
+    margin-left: 0
+
+@media (max-width: 576px)
+  .button-full-programm
+    width: 100%
+    font-size: 18px
+
+  .button__select-all,
+  .button__remove-all-tasks,
+  .button__start,
+  .button__prolong,
+  .button__repeat,
+  .button__continue,
+    font-size: 20px
+
+@media (max-width: 480px)
+  .button__select-all
+    width: 260px
+    height: 50px
+    border-radius: 25px
+    &:hover
+      color: #f1e2cf
+      box-shadow: none
+      cursor: pointer
+
+  .button__remove-all-tasks
+    width: 260px
+    height: 50px
+    border-radius: 25px
+    color: #d2bea6
+    &:hover
+      background: #494450
+      border: none
+      color: #f1e2cf
+      cursor: pointer
+    &_ml
+      margin-left: 0px
+
+  .button__start, .button__repeat
+    width: 200px
+    height: 50px
+    border-radius: 25px
+
+  .button__prolong
+    width: 250px
+    height: 60px
+    border-radius: 30px
+    font-size: 28px
+
+  .button__continue
+    width: 200px
+    height: 50px
+    background-color: #494450
+    border-radius: 25px
+
+  .button
+    &__height
+      width: 25%
+  .input
+    &_login_height
+      width: 50%
+    &_login_birthday
+      width: 25%
+    &_login_year
+      width: 50%
+    &_social-network
+      width: 70%
+      border-left: 2px solid #f1e2cf
+      border-radius: 0px 10px 10px 0px
+      // padding-left: 20px   
+
+  .transparent-filter
+    position: absolute
+    height: 50px
+    width: 130px
+    right: 30px
+    background: linear-gradient(to right, rgba(#e8d7c3, 0.1), #e8d7c3)
+    border-radius: 10px
+    &_new-password
+      bottom: 0
+      right: 0
+
+.button-change-paspword, .button-save-all
+  width: 260px
+
+//interface stop

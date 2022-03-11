@@ -1,0 +1,17 @@
+<svg id="icon_play" xmlns="http://www.w3.org/2000/svg" width="100" height="70" viewBox="0 0 100 70">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #494450;
+        opacity: 0.9;
+      }
+
+      .cls-2 {
+        fill: #d2bea6;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="frame_icons" class="cls-1" width="100" height="70"/>
+  <path id="icon_play-2" data-name="icon_play" class="cls-2" d="M1032,1732l40-22-40-22v44Z" transform="translate(-1000 -1675)"/>
+</svg>

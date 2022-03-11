@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d2bea6;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_dropdown" class="cls-1" d="M1011,765.01l-9-7.94,2.54-3.075,6.46,5.7,6.46-5.7,2.54,3.075Z" transform="translate(-1002 -754)"/>
+</svg>

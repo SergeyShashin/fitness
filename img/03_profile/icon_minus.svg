@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.031" height="4" viewBox="0 0 20.031 4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d2bea6;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon_minus" class="cls-1" d="M545,392l20.025,0v-4L545,388v4Z" transform="translate(-545 -388)"/>
+</svg>
