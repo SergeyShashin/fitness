@@ -1,2 +1,2 @@
 # fitness
-Site for fitness
+Site for fitness https://sergeyshashin.github.io/fitness/
