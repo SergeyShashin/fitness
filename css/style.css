@@ -622,7 +622,6 @@
     border-radius: 25px;
   }
   .button__prolong {
-    width: 250px;
     height: 60px;
     border-radius: 30px;
     font-size: 28px;
@@ -7819,7 +7818,10 @@ a, a:hover, a:active {
   .trenirovki__courses .details .summary__content {
     overflow-x: auto;
     padding: 10px 30px 25px 30px;
-    min-width: 900px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .trenirovki__courses .details .summary__content .card {
     width: 260px;
